@@ -110,13 +110,10 @@ endif
 call plug#begin(stdpath('data') . '/plugged')
 
 " Fuzzy finder makes it easier to navigate through files in a project
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-Plug 'junegunn/fzf.vim'
-
-" Vim Rooter automatically sets the working directory when in a project
-Plug 'airblade/vim-rooter'
+" Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+" Plug 'junegunn/fzf.vim'
 
 " Basically Intellisense for Vim
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
+" Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 call plug#end()
