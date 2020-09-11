@@ -95,7 +95,7 @@ nnoremap <leader>ev :edit $MYVIMRC<cr>
 nnoremap <leader>sv :source $MYVIMRC<cr>
 
 " Open up notes
-nnoremap <leader>en :edit ~/.config/nvim/notes.md<cr>
+nnoremap <leader>en :edit ~/.config/nvim/notes<cr>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""
 " Vim Plug
