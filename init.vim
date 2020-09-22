@@ -26,20 +26,17 @@ autocmd Filetype css             setlocal tabstop=2 shiftwidth=2 expandtab
 autocmd Filetype html            setlocal tabstop=2 shiftwidth=2 expandtab
 autocmd Filetype javascript      setlocal tabstop=2 shiftwidth=2 expandtab
 autocmd Filetype javascriptreact setlocal tabstop=2 shiftwidth=2 expandtab
-autocmd Filetype typescript      setlocal tabstop=2 shiftwidth=2 expandtab
-autocmd Filetype rust            setlocal tabstop=4 shiftwidth=4 expandtab
-autocmd Filetype vim             setlocal tabstop=2 shiftwidth=2 expandtab
 autocmd Filetype markdown        setlocal tabstop=2 shiftwidth=2 expandtab
+autocmd Filetype rust            setlocal tabstop=4 shiftwidth=4 expandtab
+autocmd Filetype typescript      setlocal tabstop=2 shiftwidth=2 expandtab
+autocmd Filetype vim             setlocal tabstop=2 shiftwidth=2 expandtab
+autocmd Filetype yaml            setlocal tabstop=2 shiftwidth=2 expandtab
 
-" Override typescriptreact syntax
 " Source: https://vim.fandom.com/wiki/Forcing_Syntax_Coloring_for_files_with_odd_extensions
 augroup filetypedetect
-  au BufRead,BufNewFile *.tsx set filetype=typescript
+  au BufRead,BufNewFile *.tsx        set filetype=typescript
+  au BufRead,BufNewFile *.dockerfile set filetype=dockerfile
 augroup END
-
-" :W sudo saves the file
-" (useful for handling the permission-denied error)
-" command! W execute 'w !sudo tee % > /dev/null' <bar> edit!
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""
 " Editing
