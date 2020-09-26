@@ -1,7 +1,8 @@
 """"""""""""""""""""""""""""""""""""""""""""""""""""
 " Sourced files
 """"""""""""""""""""""""""""""""""""""""""""""""""""
-source ./vim-plug/plugins.vim
+source $HOME/.config/nvim/vim-plug/plugins.vim
+source $HOME/.config/nvim/colors/colors.vim
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""
 " General
@@ -38,7 +39,7 @@ autocmd Filetype yaml            setlocal tabstop=2 shiftwidth=2 expandtab
 
 " Source: https://vim.fandom.com/wiki/Forcing_Syntax_Coloring_for_files_with_odd_extensions
 augroup filetypedetect
-  au BufRead,BufNewFile *.tsx        set filetype=typescript
+  " au BufRead,BufNewFile *.tsx        set filetype=typescript
   au BufRead,BufNewFile *.dockerfile set filetype=dockerfile
 augroup END
 

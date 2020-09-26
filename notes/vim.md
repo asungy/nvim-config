@@ -24,3 +24,5 @@
 - To indent align pasted text: `<[><p>`
 - To view key notation: `:help key-notation`
 - In Vim manual, open file under cursor in split window: `<CTRL-W><f>`
+- Change working directory to current file with `:cd %:p:h` (for all windows)
+  - To change working directory for the current window only: `:lcd %:p:h`

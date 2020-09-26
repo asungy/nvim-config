@@ -11,6 +11,12 @@ endif
 
 call plug#begin('~/.config/nvim/autoload/plugged')
 
+" Better syntax support
+Plug 'sheerun/vim-polyglot'
+
+" Dark theme for neovim
+Plug 'joshdick/onedark.vim'
+
 " Fuzzy finder makes it easier to navigate through files in a project
 " GFiles command needs RipGrep installed on system
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
