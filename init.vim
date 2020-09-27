@@ -99,3 +99,17 @@ nnoremap <leader>sv :source $MYVIMRC<cr>
 " Open up notes
 nnoremap <leader>en :edit ~/.config/nvim/notes<cr>
 
+" GFiles
+nnoremap <leader>fi :Files<cr>
+
+" RipGrep
+nnoremap <leader>rg :Rg<cr>
+
+" BLines
+nnoremap <leader>bl :BLines<cr>
+
+" New tab
+nnoremap <leader>tn :tabnew<cr>
+
+" Vertical split
+nnoremap <leader>vs :vsplit<cr>

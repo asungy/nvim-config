@@ -23,6 +23,11 @@ Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'airblade/vim-rooter'
 
+
+" Auto-closing for '(', '{', '['
+Plug 'jiangmiao/auto-pairs'
+
+
 " Basically Intellisense for Vim
 " Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
