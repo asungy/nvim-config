@@ -100,7 +100,7 @@ nnoremap <leader>sv :source $MYVIMRC<cr>
 nnoremap <leader>en :edit ~/.config/nvim/notes<cr>
 
 " GFiles
-nnoremap <leader>fi :Files<cr>
+nnoremap <leader>fi :GFiles<cr>
 
 " RipGrep
 nnoremap <leader>rg :Rg<cr>
