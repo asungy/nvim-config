@@ -14,6 +14,9 @@ set rnu
 " Do not wrap text
 " set nowrap
 
+" Set no highlight
+set nohls
+
 " A tab is equivalent to 4 spaces
 set tabstop=4
 
