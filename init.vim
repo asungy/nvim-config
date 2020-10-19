@@ -116,3 +116,6 @@ nnoremap <leader>tn :tabnew<cr>
 
 " Vertical split
 nnoremap <leader>vs :vsplit<cr>
+
+" View current directory
+nnoremap <leader>ed :edit .<cr>
