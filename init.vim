@@ -119,3 +119,6 @@ nnoremap <leader>vs :vsplit<cr>
 
 " View current directory
 nnoremap <leader>ed :edit .<cr>
+
+" Change directory to parent directory of current file
+nnoremap <leader>cd :cd %:p:h<cr>
