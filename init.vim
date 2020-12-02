@@ -88,6 +88,7 @@ nnoremap <C-w>v <C-w>t<C-w>H
 nnoremap + <C-w>>
 nnoremap _ <C-w><
 
+nnoremap <C-n> :NERDTreeToggle<CR>
 """"""""""""""""""""""""""""""""""""""""""""""""""""
 " Leader key commands
 """"""""""""""""""""""""""""""""""""""""""""""""""""

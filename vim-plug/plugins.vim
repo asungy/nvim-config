@@ -27,6 +27,8 @@ Plug 'airblade/vim-rooter'
 " Auto-closing for '(', '{', '['
 Plug 'jiangmiao/auto-pairs'
 
+" File explorer
+Plug 'preservim/nerdtree'
 
 " Basically Intellisense for Vim
 " Plug 'neoclide/coc.nvim', {'branch': 'release'}
