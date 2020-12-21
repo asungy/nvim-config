@@ -21,8 +21,9 @@ Plug 'joshdick/onedark.vim'
 " GFiles command needs RipGrep installed on system
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
-Plug 'airblade/vim-rooter'
 
+" Sets vim working directory to a project root
+Plug 'airblade/vim-rooter'
 
 " Auto-closing for '(', '{', '['
 Plug 'jiangmiao/auto-pairs'

@@ -3,6 +3,7 @@
 """"""""""""""""""""""""""""""""""""""""""""""""""""
 source $HOME/.config/nvim/vim-plug/plugins.vim
 source $HOME/.config/nvim/colors/colors.vim
+source $HOME/.config/nvim/vimrc/emojis.vim
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""
 " General
