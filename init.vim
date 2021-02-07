@@ -104,6 +104,9 @@ nnoremap <leader>sv :source $MYVIMRC<cr>
 " Open up notes
 nnoremap <leader>en :edit ~/.config/nvim/notes<cr>
 
+" Open NERDTree in current window
+nnoremap <leader>ed :edit .<cr>
+
 " GFiles
 nnoremap <leader>fi :GFiles<cr>
 
