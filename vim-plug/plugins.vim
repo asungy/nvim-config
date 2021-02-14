@@ -34,4 +34,7 @@ Plug 'preservim/nerdtree'
 " Basically Intellisense for Vim
 " Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
+" Julia Plugin
+Plug 'JuliaEditorSupport/julia-vim'
+
 call plug#end()
