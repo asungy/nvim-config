@@ -35,6 +35,6 @@ Plug 'preservim/nerdtree'
 " Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " Julia Plugin
-Plug 'JuliaEditorSupport/julia-vim'
+" Plug 'JuliaEditorSupport/julia-vim'
 
 call plug#end()
