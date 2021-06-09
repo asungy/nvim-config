@@ -38,6 +38,17 @@ set expandtab
 " Auto-indent
 set autoindent
 
+" Specific filetype settings
+"
+" To list available filetypes type `:setfiletype ` (note the space), then
+" press `Ctrl-d`.
+autocmd Filetype vim    setlocal tabstop=2 shiftwidth=2 expandtab
+
+" Set detection for unknown file extensions
+augroup filetypedetect
+  au BufRead, BufNewFile *.dockerfile set filetype=dockerfile
+augroup END
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Editing
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
