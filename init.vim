@@ -84,3 +84,11 @@ nnoremap - <C-w><
 
 " Quick access for NERDTree
 nnoremap <C-n> :NERDTreeToggle<CR>
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Leader key commands
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let mapleader = " "
+
+" Open nvim-config directory
+nnoremap <leader>vc :edit ~/.config/nvim<cr>
