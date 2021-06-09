@@ -11,6 +11,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 	" File explorer
 	Plug 'preservim/nerdtree'
 
+  " Syntax language pack
+  Plug 'sheerun/vim-polyglot'
+
   " Color themes
   Plug 'morhetz/gruvbox'
   Plug 'dracula/vim', {'as': 'dracula'}
