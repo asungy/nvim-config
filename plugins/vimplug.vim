@@ -11,4 +11,10 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 	" File explorer
 	Plug 'preservim/nerdtree'
 
+  " Color themes
+  Plug 'morhetz/gruvbox'
+  Plug 'dracula/vim', {'as': 'dracula'}
+  Plug 'tomasr/molokai'
+  Plug 'joshdick/onedark.vim'
+
 call plug#end()

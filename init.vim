@@ -2,6 +2,7 @@
 " Sourced files
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 source $HOME/.config/nvim/plugins/vimplug.vim
+source $HOME/.config/nvim/themes/theme.vim
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Appearance
