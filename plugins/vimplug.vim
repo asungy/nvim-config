@@ -14,6 +14,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
   " Syntax language pack
   Plug 'sheerun/vim-polyglot'
 
+  " Allows nvim to quickly maximize/un-maximize window
+  Plug 'szw/vim-maximizer'
+
   " Color themes
   Plug 'morhetz/gruvbox'
   Plug 'dracula/vim', {'as': 'dracula'}

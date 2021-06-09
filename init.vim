@@ -99,3 +99,6 @@ nnoremap <leader>sv :source $MYVIMRC<cr>
 
 " Vertical window splitting
 nnoremap <leader>vs :vsplit<cr>
+
+" Toggle window maximization
+nnoremap <leader>mt :MaximizerToggle!<cr>
