@@ -47,7 +47,8 @@ autocmd Filetype vim    setlocal tabstop=2 shiftwidth=2 expandtab
 
 " Set detection for unknown file extensions
 augroup filetypedetect
-  au BufRead, BufNewFile *.dockerfile set filetype=dockerfile
+  autocmd BufNew,BufRead,BufNewFile *.dockerfile set filetype=dockerfile
+  autocmd BufNew,BufRead,BufNewFile *.asm        set filetype=asm
 augroup END
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -92,3 +93,9 @@ let mapleader = " "
 
 " Open nvim-config directory
 nnoremap <leader>vc :edit ~/.config/nvim<cr>
+
+" Re-source vimrc
+nnoremap <leader>sv :source $MYVIMRC<cr>
+
+" Vertical window splitting
+nnoremap <leader>vs :vsplit<cr>
