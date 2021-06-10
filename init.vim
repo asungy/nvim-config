@@ -44,6 +44,7 @@ set autoindent
 " To list available filetypes type `:setfiletype ` (note the space), then
 " press `Ctrl-d`.
 autocmd Filetype vim    setlocal tabstop=2 shiftwidth=2 expandtab
+autocmd Filetype asm    setlocal tabstop=2 shiftwidth=2 expandtab
 
 " Set detection for unknown file extensions
 augroup filetypedetect
@@ -92,7 +93,7 @@ nnoremap <C-n> :NERDTreeToggle<CR>
 let mapleader = " "
 
 " Open nvim-config directory
-nnoremap <leader>vc :edit ~/.config/nvim<cr>
+nnoremap <leader>cf :edit ~/.config/nvim<cr>
 
 " Re-source vimrc
 nnoremap <leader>sv :source $MYVIMRC<cr>
@@ -102,3 +103,10 @@ nnoremap <leader>vs :vsplit<cr>
 
 " Toggle window maximization
 nnoremap <leader>mt :MaximizerToggle!<cr>
+
+" Colorschemes
+nnoremap <leader>c1 :colorscheme gruvbox<cr>
+nnoremap <leader>c2 :colorscheme dracula<cr>
+nnoremap <leader>c3 :colorscheme molokai<cr>
+nnoremap <leader>c4 :colorscheme onedark<cr>
+
