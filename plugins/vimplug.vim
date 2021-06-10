@@ -20,7 +20,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
   " Color themes
   Plug 'morhetz/gruvbox'
   Plug 'dracula/vim', {'as': 'dracula'}
-  Plug 'tomasr/molokai'
+  Plug 'asungy/molokai'
   Plug 'joshdick/onedark.vim'
 
 call plug#end()
