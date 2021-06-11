@@ -11,6 +11,10 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 	" File explorer
 	Plug 'preservim/nerdtree'
 
+  " Fuzzy Finder
+  Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+  Plug 'junegunn/fzf.vim'
+
   " Syntax language pack
   Plug 'sheerun/vim-polyglot'
 

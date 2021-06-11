@@ -105,9 +105,9 @@ nnoremap <leader>vs :vsplit<cr>
 nnoremap <leader>mt :MaximizerToggle!<cr>
 
 " Colorschemes
-nnoremap <leader>c0 :colorscheme default<cr>
-nnoremap <leader>c1 :colorscheme gruvbox<cr>
-nnoremap <leader>c2 :colorscheme dracula<cr>
-nnoremap <leader>c3 :colorscheme molokai<cr>
-nnoremap <leader>c4 :colorscheme onedark<cr>
+nnoremap <leader>co :Colors<cr>
+
+" FZF
+nnoremap <leader>fi :Files<cr>
+nnoremap <leader>rg :Rg<cr>
 

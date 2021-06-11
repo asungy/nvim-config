@@ -1,9 +1,14 @@
-# Install cURL
-sudo apt install curl
+# Install cURL:
+#   To download VimPlug
+sudo apt -y install curl
 
-# Install FZF
-git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
-~/.fzf/install
+# Install RipGrep
+#  for :Rg command in fzf
+sudo apt -y install ripgrep
+
+# Install Silver Searcher
+#  for :Ag command in fzf
+sudo apt -y install silversearcher-ag
 
 # Re-source .bashrc
 source ~/.bashrc
