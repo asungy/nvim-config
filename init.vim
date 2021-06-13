@@ -43,13 +43,14 @@ set autoindent
 "
 " To list available filetypes type `:setfiletype ` (note the space), then
 " press `Ctrl-d`.
-autocmd Filetype vim    setlocal tabstop=2 shiftwidth=2 expandtab
-autocmd Filetype asm    setlocal tabstop=2 shiftwidth=2 expandtab
+autocmd Filetype asm     setlocal tabstop=2 shiftwidth=2 expandtab
+autocmd Filetype nasm    setlocal tabstop=2 shiftwidth=2 expandtab
+autocmd Filetype vim     setlocal tabstop=2 shiftwidth=2 expandtab
 
 " Set detection for unknown file extensions
 augroup filetypedetect
   autocmd BufNew,BufRead,BufNewFile *.dockerfile set filetype=dockerfile
-  autocmd BufNew,BufRead,BufNewFile *.asm        set filetype=asm
+  autocmd BufNew,BufRead,BufNewFile *.asm        set filetype=nasm
 augroup END
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -100,6 +101,9 @@ nnoremap <leader>sv :source $MYVIMRC<cr>
 
 " Vertical window splitting
 nnoremap <leader>vs :vsplit<cr>
+
+" New tab
+nnoremap <leader>nt :tabnew<cr>
 
 " Toggle window maximization
 nnoremap <leader>mt :MaximizerToggle!<cr>
