@@ -27,4 +27,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
   Plug 'asungy/molokai'
   Plug 'joshdick/onedark.vim'
 
+  " Auto close brackets, parentheses, and quotes
+  Plug 'jiangmiao/auto-pairs'
+
 call plug#end()
