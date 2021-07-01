@@ -43,10 +43,15 @@ set autoindent
 "
 " To list available filetypes type `:setfiletype ` (note the space), then
 " press `Ctrl-d`.
-autocmd Filetype asm           setlocal tabstop=2 shiftwidth=2 expandtab
-autocmd Filetype nasm          setlocal tabstop=2 shiftwidth=2 expandtab
-autocmd Filetype vim           setlocal tabstop=2 shiftwidth=2 expandtab
-autocmd Filetype javascript    setlocal tabstop=2 shiftwidth=2 expandtab
+autocmd Filetype asm            setlocal tabstop=2 shiftwidth=2 expandtab
+autocmd Filetype html           setlocal tabstop=2 shiftwidth=2 expandtab
+autocmd Filetype css            setlocal tabstop=2 shiftwidth=2 expandtab
+autocmd Filetype javascript     setlocal tabstop=2 shiftwidth=2 expandtab
+autocmd Filetype json           setlocal tabstop=2 shiftwidth=2 expandtab
+autocmd Filetype markdown       setlocal tabstop=2 shiftwidth=2 expandtab
+autocmd Filetype markdown.mdx   setlocal tabstop=2 shiftwidth=2 expandtab
+autocmd Filetype nasm           setlocal tabstop=2 shiftwidth=2 expandtab
+autocmd Filetype vim            setlocal tabstop=2 shiftwidth=2 expandtab
 
 " Set detection for unknown file extensions
 augroup filetypedetect
@@ -114,5 +119,6 @@ nnoremap <leader>co :Colors<cr>
 
 " FZF
 nnoremap <leader>fi :Files<cr>
+nnoremap <leader>gi :GFiles<cr>
 nnoremap <leader>rg :Rg<cr>
 
