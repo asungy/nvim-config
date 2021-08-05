@@ -33,4 +33,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
   " Julia support
   Plug 'JuliaEditorSupport/julia-vim'
 
+  " Easily wrap text in parentheses, brackets, quotes, etc
+  Plug 'tpope/vim-surround'
+
 call plug#end()
