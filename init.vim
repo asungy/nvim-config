@@ -61,6 +61,7 @@ autocmd Filetype vim                setlocal tabstop=2 shiftwidth=2 expandtab
 augroup filetypedetect
   autocmd BufNew,BufRead,BufNewFile *.dockerfile set filetype=dockerfile
   autocmd BufNew,BufRead,BufNewFile *.asm        set filetype=nasm
+  autocmd BufNew,BufRead,BufNewFile *.cls        set filetype=tex
 augroup END
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
