@@ -36,4 +36,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
   " Easily wrap text in parentheses, brackets, quotes, etc
   Plug 'tpope/vim-surround'
 
+  " Quick commenting/uncommenting
+  Plug 'tpope/vim-commentary'
+
 call plug#end()

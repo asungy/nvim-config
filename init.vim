@@ -64,6 +64,10 @@ augroup filetypedetect
   autocmd BufNew,BufRead,BufNewFile *.cls        set filetype=tex
 augroup END
 
+" Auto-commenting
+autocmd FileType tex setlocal formatoptions+=c formatoptions+=r formatoptions+=o 
+                            \ comments+=:%
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Editing
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
