@@ -54,6 +54,7 @@ autocmd Filetype json               setlocal tabstop=2 shiftwidth=2 expandtab
 " Hint - `gq` reformats selected text
 autocmd Filetype markdown           setlocal tabstop=2 shiftwidth=2 expandtab textwidth=80
 autocmd Filetype markdown.mdx       setlocal tabstop=2 shiftwidth=2 expandtab textwidth=80
+autocmd Filetype tex                setlocal tabstop=2 shiftwidth=2 expandtab textwidth=80
 autocmd Filetype nasm               setlocal tabstop=2 shiftwidth=2 expandtab
 autocmd Filetype vim                setlocal tabstop=2 shiftwidth=2 expandtab
 

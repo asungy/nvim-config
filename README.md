@@ -16,3 +16,6 @@ git clone git@github.com:asungy/nvim-config.git ~/.config/nvim
 ```
 ./install-deps.sh
 ```
+
+## Copying Tmux to home directory
+cp tmux/tmux.conf ~/.tmux.conf
