@@ -14,7 +14,7 @@ git clone git@github.com:asungy/nvim-config.git ~/.config/nvim
 
 ## Install dependencies (Debian)
 ```
-./install-deps.sh
+~/.config/nvim/install-deps.sh
 ```
 
 ## Copying Tmux to home directory

@@ -6,9 +6,9 @@ sudo apt -y install curl
 #  for :Rg command in fzf
 sudo apt -y install ripgrep
 
-# Install Silver Searcher
-#  for :Ag command in fzf
-sudo apt -y install silversearcher-ag
+# Install fzf
+git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
+~/.fzf/install
 
 # Re-source .bashrc
 source ~/.bashrc

@@ -69,6 +69,9 @@ augroup END
 autocmd FileType tex setlocal formatoptions+=c formatoptions+=r formatoptions+=o 
                             \ comments+=:%
 
+" Include support for vim-commentary plugin
+autocmd FileType nim setlocal commentstring=#\ %s
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Editing
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
