@@ -19,5 +19,5 @@ git clone git@github.com:asungy/nvim-config.git ~/.config/nvim
 
 ## Copying Tmux to home directory
 ```
-cp tmux/tmux.conf ~/.tmux.conf
+cp ~/.config/nvim/tmux/tmux.conf ~/.tmux.conf
 ```
