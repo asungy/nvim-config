@@ -131,7 +131,10 @@ nnoremap <leader>mt :MaximizerToggle!<cr>
 nnoremap <leader>co :Colors<cr>
 
 " FZF
+nnoremap <leader>bl :BLines<cr>
 nnoremap <leader>fi :Files<cr>
 nnoremap <leader>gi :GFiles<cr>
+nnoremap <leader>li :Lines<cr>
+nnoremap <leader>ma :Marks<cr>
 nnoremap <leader>rg :Rg<cr>
 
