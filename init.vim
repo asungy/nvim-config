@@ -58,6 +58,9 @@ autocmd Filetype tex                setlocal tabstop=2 shiftwidth=2 expandtab te
 autocmd Filetype nasm               setlocal tabstop=2 shiftwidth=2 expandtab
 autocmd Filetype vim                setlocal tabstop=2 shiftwidth=2 expandtab
 
+" For Epistemix work
+autocmd Filetype cpp                setlocal tabstop=4 shiftwidth=4 noexpandtab
+
 " Set detection for unknown file extensions
 augroup filetypedetect
   autocmd BufNew,BufRead,BufNewFile *.dockerfile set filetype=dockerfile
@@ -130,8 +133,13 @@ nnoremap <leader>mt :MaximizerToggle!<cr>
 " Colorschemes
 nnoremap <leader>co :Colors<cr>
 
+" View registers
+nnoremap <leader>re :registers<cr>
+
 " FZF
+nnoremap <leader>bl :BLines<cr>
 nnoremap <leader>fi :Files<cr>
 nnoremap <leader>gi :GFiles<cr>
+nnoremap <leader>li :Lines<cr>
+nnoremap <leader>ma :Marks<cr>
 nnoremap <leader>rg :Rg<cr>
-

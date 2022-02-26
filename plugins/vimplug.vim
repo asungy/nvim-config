@@ -26,12 +26,11 @@ call plug#begin('~/.config/nvim/autoload/plugged')
   Plug 'dracula/vim', {'as': 'dracula'}
   Plug 'asungy/molokai'
   Plug 'joshdick/onedark.vim'
+  Plug 'mhartington/oceanic-next'
+  Plug 'kyoz/purify', { 'rtp': 'vim' }
 
   " Auto close brackets, parentheses, and quotes
   Plug 'jiangmiao/auto-pairs'
-
-  " Julia support
-  Plug 'JuliaEditorSupport/julia-vim'
 
   " Easily wrap text in parentheses, brackets, quotes, etc
   Plug 'tpope/vim-surround'
