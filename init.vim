@@ -23,6 +23,11 @@ set scrolloff=10
 " Set wildmenu for displaying command completion
 set wildmenu
 
+" Show trailing whitespaces. Thanks, Sam!
+set listchars=precedes:<,extends:>,tab:\ \ ,trail:_
+
+" Show elipses for wrapped lines
+set showbreak=...
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Indenting
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
