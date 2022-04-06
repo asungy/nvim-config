@@ -28,6 +28,31 @@ set listchars=precedes:<,extends:>,tab:\ \ ,trail:_
 
 " Show elipses for wrapped lines
 set showbreak=...
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Status Line
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+set laststatus=2        "set statusline visibility to 'always'
+set statusline=         "clear entire statusline
+set statusline+=%n      "buffer number
+set statusline+=\       "space
+set statusline+=%{&ff}  "file format where EOL is: dos = <CR><NL>, unix = <NL>, mac = <CR>
+set statusline+=\       "space
+set statusline+=%y      "file type
+set statusline+=\       "space
+set statusline+=%F      "full filepath
+set statusline+=%=      "separation point between left and right aligned items
+set statusline+=%m      "modified flag where: [+] = modified, [-] = unmodifiable
+set statusline+=\       "space
+set statusline+=L:      "L:
+set statusline+=%l      "current line
+set statusline+=/       "/
+set statusline+=%L      "total lines
+set statusline+=\       "space
+set statusline+=C:      "C:
+set statusline+=%v      "column number
+set statusline+=\       "space
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Indenting
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
