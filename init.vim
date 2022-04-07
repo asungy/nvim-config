@@ -36,13 +36,12 @@ set laststatus=2        "set statusline visibility to 'always'
 set statusline=         "clear entire statusline
 set statusline+=%n      "buffer number
 set statusline+=\       "space
-set statusline+=%{&ff}  "file format where EOL is: dos = <CR><NL>, unix = <NL>, mac = <CR>
+set statusline+=%m      "modified flag where: [+] = modified, [-] = unmodifiable
 set statusline+=\       "space
 set statusline+=%y      "file type
 set statusline+=\       "space
 set statusline+=%F      "full filepath
 set statusline+=%=      "separation point between left and right aligned items
-set statusline+=%m      "modified flag where: [+] = modified, [-] = unmodifiable
 set statusline+=\       "space
 set statusline+=L:      "L:
 set statusline+=%l      "current line
