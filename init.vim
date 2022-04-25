@@ -13,7 +13,6 @@ set number
 
 " Display relative number lines
 set relativenumber
-
 " Do not highlight searches
 set nohlsearch
 
@@ -40,7 +39,7 @@ set statusline+=%m      "modified flag where: [+] = modified, [-] = unmodifiable
 set statusline+=\       "space
 set statusline+=%y      "file type
 set statusline+=\       "space
-set statusline+=%F      "full filepath
+set statusline+=%f      "full filepath
 set statusline+=%=      "separation point between left and right aligned items
 set statusline+=\       "space
 set statusline+=L:      "L:
@@ -86,9 +85,6 @@ autocmd Filetype markdown.mdx       setlocal tabstop=2 shiftwidth=2 expandtab te
 autocmd Filetype tex                setlocal tabstop=2 shiftwidth=2 expandtab textwidth=80
 autocmd Filetype nasm               setlocal tabstop=2 shiftwidth=2 expandtab
 autocmd Filetype vim                setlocal tabstop=2 shiftwidth=2 expandtab
-
-" For Epistemix work
-autocmd Filetype cpp                setlocal tabstop=4 shiftwidth=4 noexpandtab
 
 " Set detection for unknown file extensions
 augroup filetypedetect
