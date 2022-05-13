@@ -24,6 +24,7 @@ set wildmenu
 
 " Show trailing whitespaces. Thanks, Sam!
 set listchars=precedes:<,extends:>,tab:\ \ ,trail:_
+set list
 
 " Show elipses for wrapped lines
 set showbreak=...
