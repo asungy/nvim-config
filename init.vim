@@ -28,6 +28,10 @@ set list
 
 " Show elipses for wrapped lines
 set showbreak=...
+set breakindent
+
+" Enable 24-bit RGB in TUI
+set termguicolors
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Status Line

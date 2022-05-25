@@ -38,4 +38,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
   " Quick commenting/uncommenting
   Plug 'tpope/vim-commentary'
 
+  " Add smooth scrolling
+  Plug 'psliwka/vim-smoothie'
+
 call plug#end()
