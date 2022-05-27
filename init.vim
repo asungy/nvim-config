@@ -129,6 +129,16 @@ nnoremap <C-l> <C-w>l
 nnoremap <S-l> gt
 nnoremap <S-h> gT
 
+" Quick access for NERDTree
+nnoremap <C-n> :NERDTreeToggle<CR>
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Windowing
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Set `vsplit` to split to the right and `split` to split towards the bottom
+set splitright
+set splitbelow
+
 " Change two horizontally split windows to vertical split
 nnoremap <C-w>v <C-w>t<C-w>H
 
@@ -136,9 +146,6 @@ nnoremap <C-w>v <C-w>t<C-w>H
 " Use <C-w>= to make windows equidistant
 nnoremap + <C-w>>
 nnoremap - <C-w><
-
-" Quick access for NERDTree
-nnoremap <C-n> :NERDTreeToggle<CR>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Leader key commands
@@ -152,7 +159,7 @@ nnoremap <leader>cf :edit ~/.config/nvim<cr>
 nnoremap <leader>sv :source $MYVIMRC<cr>
 
 " Vertical window splitting
-nnoremap <leader>vs :vsplit<cr>
+nnoremap <leader>vs :vsplit .<cr>
 
 " New tab
 nnoremap <leader>nt :tabnew<cr>
