@@ -1,3 +1,11 @@
+-- Autocommand that reloads neovim whenever keymaps.lua is written to
+vim.cmd([[
+    if !exists("options_autocmd_loaded")
+        let options_autocmd_loaded = 1
+        autocmd BufWritePost options.lua source <afile>
+    endif
+]])
+
 -- Used to help construct a string representation of a list of values that
 -- neovim can understand.
 function list_string(list)
@@ -44,7 +52,7 @@ local options = {
         "noselect"
     },
     confirm = true,             -- raise dialog for confirmation
-    cursorline = true,          -- highlight text line of cursor
+    cursorline = false,          -- highlight text line of cursor
     expandtab = true,           -- use appropriate number of spaces to insert a <Tab>
     fileencoding = "utf-8",     -- encoding written to a file
     hlsearch = false,           -- highlight all matches on previous search pattern

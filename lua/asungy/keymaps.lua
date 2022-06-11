@@ -1,3 +1,11 @@
+-- Autocommand that reloads neovim whenever keymaps.lua is written to
+vim.cmd([[
+    if !exists("keymaps_autocmd_loaded")
+        let keymaps_autocmd_loaded = 1
+        autocmd BufWritePost keymaps.lua source <afile>
+    endif
+]])
+
 local keymap = vim.api.nvim_set_keymap
 local opts = {
     noremap = true, -- no recursive mapping
