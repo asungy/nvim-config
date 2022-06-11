@@ -20,7 +20,7 @@ if fn.empty(fn.glob(install_path)) > 0 then
     install_path,
   }
   print "Installing packer close and reopen Neovim..."
-  vim.cmd [[packadd packer.nvim]]
+  vim.cmd("packadd packer.nvim")
 end
 
 local ok, packer = pcall(require, "packer")
@@ -42,11 +42,27 @@ return packer.startup(function(use)
     -- package manager
     use "wbthomason/packer.nvim"
 
+    -- color themes
+    use "joshdick/onedark.vim"
+    use "morhetz/gruvbox"
+    use 'folke/tokyonight.nvim'
+
     -- lua implementation of Popup API
     use "nvim-lua/popup.nvim"
 
     -- useful lua functions used by lots of plugings
     use "nvim-lua/plenary.nvim"
+
+    -- completion plugins
+    use "hrsh7th/nvim-cmp"
+    use "hrsh7th/cmp-buffer"
+    use "hrsh7th/cmp-path"
+    use "hrsh7th/cmp-cmdline"
+    use "saadparwaiz1/cmp_luasnip"
+
+    -- snippets
+    use "L3MON4D3/LuaSnip"
+    use "rafamadriz/friendly-snippets"
 
     -- markdown preview
     use {

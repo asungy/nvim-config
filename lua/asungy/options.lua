@@ -1,11 +1,3 @@
--- Autocommand that reloads neovim whenever keymaps.lua is written to
-vim.cmd([[
-    if !exists("options_autocmd_loaded")
-        let options_autocmd_loaded = 1
-        autocmd BufWritePost options.lua source <afile>
-    endif
-]])
-
 -- Used to help construct a string representation of a list of values that
 -- neovim can understand.
 function list_string(list)
@@ -16,16 +8,12 @@ function list_string(list)
     return str .. list[#list]
 end
 
--------------------------------------------------------------------------------
--- :help options
--------------------------------------------------------------------------------
-
 -- value for listchars
 local listchars = {
     "precedes:<",
     "extends:>",
     "tab:>-",
-    "trail:_"
+    "trail:_",
 }
 listchars = list_string(listchars)
 
@@ -49,10 +37,10 @@ local options = {
     cmdheight = 2,              --  number of lines used for the command line
     completeopt = {             -- show completion menu
         "menuone",
-        "noselect"
+        "noselect",
     },
     confirm = true,             -- raise dialog for confirmation
-    cursorline = false,          -- highlight text line of cursor
+    cursorline = false,         -- highlight text line of cursor
     expandtab = true,           -- use appropriate number of spaces to insert a <Tab>
     fileencoding = "utf-8",     -- encoding written to a file
     hlsearch = false,           -- highlight all matches on previous search pattern
@@ -67,7 +55,7 @@ local options = {
     matchpairs = {              -- characters that form pairs for '%' command
         "(:)",
         "[:]",
-        "{:}"
+        "{:}",
     },
     menuitems = 25,             -- max number of items to use in a menu
     mouse = "a",                -- enable mouse support
@@ -90,7 +78,7 @@ local options = {
     termguicolors = true,       -- enable 24-bit RGB color
     wildmenu = true,            -- enable "enhanced mode" of command-line completion
     wrap = true,                -- set text wrap
-    wrapmargin = 0              -- number of characters from window border before wrapping starts
+    wrapmargin = 0,             -- number of characters from window border before wrapping starts
 }
 
 -- Set vim options
