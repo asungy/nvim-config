@@ -34,7 +34,7 @@ local options = {
     backup = false,             -- create backup file
     breakindent = true,         -- indent wrapped lines
     clipboard = "unnamedplus",  --  use clipboard register '+'
-    cmdheight = 2,              --  number of lines used for the command line
+    cmdheight = 1,              --  number of lines used for the command line
     completeopt = {             -- show completion menu
         "menuone",
         "noselect",

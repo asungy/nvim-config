@@ -53,6 +53,10 @@ return packer.startup(function(use)
     -- useful lua functions used by lots of plugings
     use "nvim-lua/plenary.nvim"
 
+    -- language server
+    use "neovim/nvim-lspconfig"
+    use "williamboman/nvim-lsp-installer"
+
     -- completion plugins
     use "hrsh7th/nvim-cmp"
     use "hrsh7th/cmp-buffer"
@@ -80,7 +84,6 @@ return packer.startup(function(use)
     }
 
     -- Automatically set up your configuration after cloning packer.nvim
-    if PACKER_BOOTSTRAP then
-        require("packer").sync()
+    if PACKER_BOOTSTRAP then require("packer").sync()
     end
 end)
