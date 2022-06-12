@@ -1,5 +1,3 @@
-# Install
-
 ## Cloning
 
 For HTTPS:
@@ -14,7 +12,7 @@ git clone git@github.com:asungy/nvim-config.git ~/.config/nvim
 
 ## Install dependencies (Ubuntu)
 ```
-~/.config/nvim/install-deps.sh
+~/.config/nvim/scripts/install_deps.sh
 ```
 
 ## Copying Tmux to home directory
