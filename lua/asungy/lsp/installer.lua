@@ -5,7 +5,9 @@ if not ok then
 end
 
 lsp_installer.setup({
-    automatic_installation = true,
+    -- Setting this to false because this doesn't work well for all servers. If
+    -- you want to install specific servers use `:LspInstall <name of server>`
+    automatic_installation = false,
     ui = {
         -- Whether to automatically check for outdated servers when opening the UI window.
         check_outdated_servers_on_open = true,

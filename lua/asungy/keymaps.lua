@@ -14,7 +14,11 @@ local command
 keymap("n", "<S-k>", "k<S-j>", opts)
 
 -- Insert newline in normal mode under cursor
-keymap("n", "<Return>", "o<esc>", opts)
+--keymap("n", "<Return>", "o<esc>", opts)
+--vim.cmd [[
+--    autocmd! CmdwinEnter [\/\?\:] nunmap <Return>
+--    autocmd! CmdwinLeave [\/\?\:] nnoremap <Return> o<esc>
+--]]
 
 -- Stay in indent-mode when indenting in visual mode
 keymap("v", "<", "<gv", opts)
