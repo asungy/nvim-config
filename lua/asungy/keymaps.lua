@@ -50,6 +50,13 @@ keymap("n", "<S-l>", "gt", opts)
 keymap("n", "<S-h>", "gT", opts)
 
 -------------------------------------------------------------------------------
+-- Misc
+-------------------------------------------------------------------------------
+
+-- Open file explorer
+keymap("n", "<C-n>", ":NERDTreeToggle<CR>", opts)
+
+-------------------------------------------------------------------------------
 -- Leader key mappings
 -------------------------------------------------------------------------------
 
@@ -66,3 +73,7 @@ keymap("n", "<leader>vs", ":vsplit .<CR>", opts)
 
 -- New tab
 keymap("n", "<leader>nt", ":tabnew<CR>", opts)
+
+-- Toggle window maximization
+keymap("n", "<leader>mt", ":MaximizerToggle!<CR>", opts)
+

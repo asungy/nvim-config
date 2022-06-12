@@ -64,6 +64,15 @@ return packer.startup(function(use)
     use "L3MON4D3/LuaSnip"
     use "rafamadriz/friendly-snippets"
 
+    -- file explorer
+    use "preservim/nerdtree"
+
+    -- smooth scrolling
+    use "psliwka/vim-smoothie"
+
+    -- allow vim to maximize/un-maximize window
+    use "szw/vim-maximizer"
+
     -- markdown preview
     use {
         "iamcco/markdown-preview.nvim",
