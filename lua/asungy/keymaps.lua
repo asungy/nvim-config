@@ -88,4 +88,7 @@ keymap("n", "<leader>fb", ":Telescope buffers<CR>", opts)
 keymap("n", "<leader>fh", ":Telescope help_tags<CR>", opts)
 keymap("n", "<leader>fr", ":Telescope registers<CR>", opts)
 keymap("n", "<leader>fm", ":Telescope marks<CR>", opts)
+keymap("n", "<leader>fc", ":Telescope commands<CR>", opts)
+keymap("n", "<leader>cs", ":Telescope colorscheme<CR>", opts)
+keymap("n", "<leader>ch", ":Telescope command_history<CR>", opts)
 
