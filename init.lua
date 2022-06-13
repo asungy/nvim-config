@@ -5,6 +5,7 @@ require "asungy.plugins"
 require "asungy.lsp.installer"
 require "asungy.lsp.config"
 
+require "asungy.autocmds"
 require "asungy.completions"
 require "asungy.keymaps"
 require "asungy.options"

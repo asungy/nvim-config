@@ -97,3 +97,6 @@ keymap("n", "<leader>gi", ":Telescope git_files<CR>", opts)
 keymap("n", "<leader>ht", ":Telescope help_tags<CR>", opts)
 keymap("n", "<leader>jl", ":Telescope jumplist<CR>", opts)
 keymap("n", "<leader>lg", ":Telescope live_grep<CR>", opts)
+
+-- ToggleTerm normal mode
+keymap("t", "<Esc>", [[<C-\><C-n>]], opts)
