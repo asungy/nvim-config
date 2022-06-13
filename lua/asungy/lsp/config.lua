@@ -52,8 +52,6 @@ local on_attach = function(client, bufnr)
     keymap("n", leader2 .. "f", vim.lsp.buf.formatting, bufopts)
 end
 
--- Use a loop to conveniently call 'setup' on multiple servers and map buffer
--- local keybindings when the language server attaches.
 local servers = {
     "ccls",          -- C++
     "dockerls",      -- Docker
@@ -66,6 +64,8 @@ local servers = {
     "tsserver",      -- JavaScript/TypeScript
 }
 
+-- Use a loop to conveniently call 'setup' on multiple servers and map buffer
+-- local keybindings when the language server attaches.
 for _, lsp in pairs(servers) do
     lspconfig[lsp].setup {
         on_attach = on_attach,

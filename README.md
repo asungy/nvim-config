@@ -1,3 +1,6 @@
+## NeoVim
+NeoVim 0.7.0 or greater is required to run these configurations.
+
 ## Cloning
 
 For HTTPS:

@@ -57,6 +57,9 @@ return packer.startup(function(use)
     use "neovim/nvim-lspconfig"
     use "williamboman/nvim-lsp-installer"
 
+    -- Telescope
+    use "nvim-telescope/telescope.nvim"
+
     -- nvim-treesitter
     use "nvim-treesitter/nvim-treesitter"
 
@@ -73,6 +76,12 @@ return packer.startup(function(use)
 
     -- file explorer
     use "preservim/nerdtree"
+
+    -- Easily wrap text in character pairs (e.g. {}, (), [])
+    use "tpope/vim-surround"
+
+    -- Quick commenting/uncommenting
+    use "tpope/vim-commentary"
 
     -- smooth scrolling
     use "psliwka/vim-smoothie"
