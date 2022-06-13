@@ -66,17 +66,17 @@ cmp.setup({
         end, { "i", "s" }),
     },
     -- When to enable completion
---    enabled = function()
---        local context = require('cmp.config.context')
---        -- keep command mode completion enabled
---        if vim.api.nvim_get_mode().mode == "c" then
---            return true
---        else
---            -- disable completion if in comments
---            return not context.in_treesitter_capture("comment")
---                and not context.in_syntax_group("Comment")
---        end
---    end,
+    enabled = function()
+        local context = require('cmp.config.context')
+        -- keep command mode completion enabled
+        if vim.api.nvim_get_mode().mode == "c" then
+            return true
+        else
+            -- disable completion if in comments
+            return not context.in_treesitter_capture("comment")
+                and not context.in_syntax_group("Comment")
+        end
+    end,
     sources = cmp.config.sources({
         { name = "luasnip" },
         { name = "buffer" },
