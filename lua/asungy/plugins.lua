@@ -63,6 +63,8 @@ return packer.startup(function(use)
     -- nvim-treesitter
     use "nvim-treesitter/nvim-treesitter"
 
+    use "akinsho/toggleterm.nvim"
+
     -- completion plugins
     use "hrsh7th/nvim-cmp"
     use "hrsh7th/cmp-buffer"
@@ -76,6 +78,9 @@ return packer.startup(function(use)
 
     -- file explorer
     use "preservim/nerdtree"
+
+    -- auto pairs
+    use "jiangmiao/auto-pairs"
 
     -- Easily wrap text in character pairs (e.g. {}, (), [])
     use "tpope/vim-surround"
