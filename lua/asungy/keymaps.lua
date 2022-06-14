@@ -60,6 +60,8 @@ keymap("n", "<S-h>", "gT", opts)
 -- Open file explorer
 keymap("n", "<C-n>", ":NERDTreeToggle<CR>", opts)
 
+-- ToggleTerm normal mode
+keymap("t", "<Esc>", [[<C-\><C-n>]], opts)
 -------------------------------------------------------------------------------
 -- Leader key mappings
 -------------------------------------------------------------------------------
@@ -82,7 +84,6 @@ keymap("n", "<leader>nt", ":tabnew<CR>", opts)
 keymap("n", "<leader>mt", ":MaximizerToggle!<CR>", opts)
 
 -- Telescope
-keymap("n", "*", ":Telescope grep_string<CR>", opts)
 keymap("n", "<leader>bl", ":Telescope current_buffer_fuzzy_find<CR>", opts)
 keymap("n", "<leader>ch", ":Telescope command_history<CR>", opts)
 keymap("n", "<leader>cs", ":Telescope colorscheme<CR>", opts)
@@ -94,9 +95,8 @@ keymap("n", "<leader>fm", ":Telescope marks<CR>", opts)
 keymap("n", "<leader>fr", ":Telescope registers<CR>", opts)
 keymap("n", "<leader>gc", ":Telescope git_commits<CR>", opts)
 keymap("n", "<leader>gi", ":Telescope git_files<CR>", opts)
+keymap("n", "<leader>gs", ":Telescope grep_string<CR>", opts)
 keymap("n", "<leader>ht", ":Telescope help_tags<CR>", opts)
 keymap("n", "<leader>jl", ":Telescope jumplist<CR>", opts)
 keymap("n", "<leader>lg", ":Telescope live_grep<CR>", opts)
 
--- ToggleTerm normal mode
-keymap("t", "<Esc>", [[<C-\><C-n>]], opts)
