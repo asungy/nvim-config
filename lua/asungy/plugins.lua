@@ -59,6 +59,8 @@ return packer.startup(function(use)
 
     -- Telescope
     use "nvim-telescope/telescope.nvim"
+    -- Requires: gcc/clang and make
+    use {'nvim-telescope/telescope-fzf-native.nvim', run = 'make' }
 
     -- nvim-treesitter
     use "nvim-treesitter/nvim-treesitter"
