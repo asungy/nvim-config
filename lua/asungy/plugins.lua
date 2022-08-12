@@ -90,6 +90,9 @@ return packer.startup(function(use)
     -- Quick commenting/uncommenting
     use "tpope/vim-commentary"
 
+    -- Git wrapper
+    use "tpope/vim-fugitive"
+
     -- smooth scrolling
     use "psliwka/vim-smoothie"
 
