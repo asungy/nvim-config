@@ -1,3 +1,7 @@
 vim.cmd[[
-    au FocusGained,BufEnter * :checktime
+    autocmd FocusGained,BufEnter * :checktime
+]]
+
+vim.cmd[[
+    autocmd DirChanged cwd :NERDTreeCWD
 ]]
