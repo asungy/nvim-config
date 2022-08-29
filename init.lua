@@ -7,6 +7,7 @@ require "asungy.lsp.config"
 
 -- Others
 require "asungy.autocmds"
+require "asungy.autopairs"
 require "asungy.completions"
 require "asungy.keymaps"
 require "asungy.neovide"

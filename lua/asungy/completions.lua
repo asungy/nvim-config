@@ -1,6 +1,6 @@
 local ok, cmp = pcall(require, "cmp")
 if not ok then
-    print("Could not find cmp")
+    print("Error: Could not find cmp (completions.lua)")
     return
 end
 
