@@ -63,7 +63,10 @@ return packer.startup(function(use)
     use {'nvim-telescope/telescope-fzf-native.nvim', run = 'make' }
 
     -- nvim-treesitter
-    use "nvim-treesitter/nvim-treesitter"
+    use {
+        "nvim-treesitter/nvim-treesitter",
+        run = function() require('nvim-treesitter.install').update({ with_sync = true }) end,
+    }
 
     use "akinsho/toggleterm.nvim"
 
@@ -82,7 +85,10 @@ return packer.startup(function(use)
     use "preservim/nerdtree"
 
     -- auto pairs
-    use "jiangmiao/auto-pairs"
+    use {
+        "windwp/nvim-autopairs",
+        config = function() require("nvim-autopairs").setup {} end
+    }
 
     -- Easily wrap text in character pairs (e.g. {}, (), [])
     use "tpope/vim-surround"

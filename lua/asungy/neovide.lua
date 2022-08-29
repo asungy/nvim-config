@@ -1,5 +1,9 @@
 -- For more configuration options, see: https://neovide.dev/configuration.html
 if vim.g.neovide == true then
+    --------------------------------------------------------------------------
+    -- Options
+    --------------------------------------------------------------------------
+
     -- Refresh rate
     vim.g.neovide_refresh_rate = 60
     -- Refresh rate when not focused
