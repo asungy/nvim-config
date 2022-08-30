@@ -45,7 +45,7 @@ return packer.startup(function(use)
     -- color themes
     use "joshdick/onedark.vim"
     use "morhetz/gruvbox"
-    use 'folke/tokyonight.nvim'
+    use "folke/tokyonight.nvim"
 
     -- lua implementation of Popup API
     use "nvim-lua/popup.nvim"
@@ -60,14 +60,15 @@ return packer.startup(function(use)
     -- Telescope
     use "nvim-telescope/telescope.nvim"
     -- Requires: gcc/clang and make
-    use {'nvim-telescope/telescope-fzf-native.nvim', run = 'make' }
+    use {"nvim-telescope/telescope-fzf-native.nvim", run = "make" }
 
     -- nvim-treesitter
     use {
         "nvim-treesitter/nvim-treesitter",
-        run = function() require('nvim-treesitter.install').update({ with_sync = true }) end,
+        run = function() require("nvim-treesitter.install").update({ with_sync = true }) end,
     }
 
+    -- Floating terminal window
     use "akinsho/toggleterm.nvim"
 
     -- completion plugins
@@ -81,8 +82,17 @@ return packer.startup(function(use)
     use "L3MON4D3/LuaSnip"
     use "rafamadriz/friendly-snippets"
 
+    -- cool fonts
+    use "kyazdani42/nvim-web-devicons"
+
     -- file explorer
-    use "preservim/nerdtree"
+    use {
+        "kyazdani42/nvim-tree.lua",
+        requires = {
+            "kyazdani42/nvim-web-devicons", -- optional, for file icons
+        },
+        tag = "nightly" -- optional, updated every week. (see issue #1193)
+    }
 
     -- auto pairs
     use {

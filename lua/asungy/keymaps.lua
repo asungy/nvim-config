@@ -58,7 +58,7 @@ keymap("n", "<S-h>", "gT", opts)
 -------------------------------------------------------------------------------
 
 -- Open file explorer
-keymap("n", "<C-n>", ":NERDTreeToggle<CR>", opts)
+keymap("n", "<C-n>", ":NvimTreeToggle<CR>", opts)
 
 -- ToggleTerm normal mode
 keymap("t", "<Esc>", [[<C-\><C-n>]], opts)
@@ -76,7 +76,7 @@ command = ":edit " .. nvim_dir .. "<CR>"
 keymap("n", "<leader>cf", command, opts)
 
 -- Vertical window split
-keymap("n", "<leader>vs", ":vsplit .<CR>", opts)
+keymap("n", "<leader>vs", ":vsplit<CR>", opts)
 
 -- New tab
 keymap("n", "<leader>nt", ":tabnew<CR>", opts)

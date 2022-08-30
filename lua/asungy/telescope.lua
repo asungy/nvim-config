@@ -1,4 +1,10 @@
-require("telescope").setup {
+local ok, telescope = pcall(require, "telescope")
+if not ok then
+    print("Error: Could not find telescope (telescope.lua)")
+    return
+end
+
+telescope.setup {
   extensions = {
     fzf = {
       fuzzy = true,                    -- false will only do exact matching
@@ -9,4 +15,4 @@ require("telescope").setup {
     }
   }
 }
-require("telescope").load_extension("fzf")
+telescope.load_extension("fzf")
