@@ -147,7 +147,7 @@ nvim_tree.setup({
         debounce_delay = 50,
       },
       git = {
-        enable = true,
+        enable = false,
         ignore = true,
         show_on_dirs = true,
         timeout = 400,

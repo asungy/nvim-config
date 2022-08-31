@@ -107,7 +107,10 @@ return packer.startup(function(use)
     use "tpope/vim-commentary"
 
     -- Git wrapper
-    use "tpope/vim-fugitive"
+    use {
+        "lewis6991/gitsigns.nvim",
+        tag = "release",
+    }
 
     -- smooth scrolling
     use "psliwka/vim-smoothie"
