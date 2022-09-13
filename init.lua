@@ -11,6 +11,7 @@ require "asungy.nvim_web_devicons"
 -- Others
 require "asungy.autocmds"
 require "asungy.autopairs"
+require "asungy.bufferline"
 require "asungy.completions"
 require "asungy.dashboard"
 require "asungy.gitsigns"

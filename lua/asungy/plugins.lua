@@ -74,6 +74,9 @@ return packer.startup(function(use)
     -- Floating terminal window
     use "akinsho/toggleterm.nvim"
 
+    -- using packer.nvim
+    use {'akinsho/bufferline.nvim', tag = "v2.*", requires = 'kyazdani42/nvim-web-devicons'}
+
     -- completion plugins
     use "hrsh7th/nvim-cmp"
     use "hrsh7th/cmp-buffer"
