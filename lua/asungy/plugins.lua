@@ -124,6 +124,9 @@ return packer.startup(function(use)
     -- allow vim to maximize/un-maximize window
     use "szw/vim-maximizer"
 
+    -- jumping around in neovim
+    use 'ggandor/lightspeed.nvim'
+
     -- markdown preview
     use {
         "iamcco/markdown-preview.nvim",
