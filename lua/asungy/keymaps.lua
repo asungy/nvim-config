@@ -81,8 +81,14 @@ keymap("n", "<leader>vs", ":vsplit<CR>", opts)
 -- New tab
 keymap("n", "<leader>nt", ":tabnew<CR>", opts)
 
+-- New buffer
+keymap("n", "<leader>nb", ":enew<CR>", opts)
+
 -- Toggle window maximization
 keymap("n", "<leader>mt", ":MaximizerToggle!<CR>", opts)
+
+-- Open terminal
+keymap("n", "<leader>tr", ":terminal<CR>", opts)
 
 -- Telescope
 keymap("n", "<leader>bl", ":Telescope current_buffer_fuzzy_find<CR>", opts)
