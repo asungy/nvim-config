@@ -81,9 +81,6 @@ keymap("n", "<leader>vs", ":vsplit<CR>", opts)
 -- New tab
 keymap("n", "<leader>nt", ":tabnew<CR>", opts)
 
--- New buffer
-keymap("n", "<leader>nb", ":enew<CR>", opts)
-
 -- Toggle window maximization
 keymap("n", "<leader>mt", ":MaximizerToggle!<CR>", opts)
 

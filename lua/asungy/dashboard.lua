@@ -35,9 +35,9 @@ dashboard.custom_center = {
     },
     {
         icon = ' ',
-        desc = 'New buffer                     ',
-        shortcut = 'Space n b',
-        action = 'enew',
+        desc = 'New tab                        ',
+        shortcut = 'Space n t',
+        action = 'tabnew',
     },
     {
         icon = ' ',
