@@ -2,8 +2,8 @@
 require "asungy.plugins"
 
 -- LSP
-require "asungy.lsp.installer"
-require "asungy.lsp.config"
+-- require "asungy.lsp.installer"
+-- require "asungy.lsp.config"
 
 -- Fonts/icons
 require "asungy.nvim_web_devicons"
