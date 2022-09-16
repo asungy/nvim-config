@@ -74,6 +74,7 @@ local options = {
     splitright = true,          -- splitting window will put new window to right of current one
     statusline = status_fmt,    -- set status line format
     swapfile = false,           -- use swapfile for buffer
+    tabline = "%M %t",          -- customize tabline format
     tabstop = 4,                -- number of spaces that <Tab> counts for
     termguicolors = true,       -- enable 24-bit RGB color
     wildmenu = true,            -- enable "enhanced mode" of command-line completion
