@@ -7,9 +7,3 @@ vim.cmd[[
 vim.cmd[[
     autocmd TermOpen * setlocal nonumber norelativenumber
 ]]
-
--- Do not show [Process exited] after closing terminal
--- Reference: https://github.com/samjwill/dotfiles/blob/master/.config/nvim/init.vim
-vim.cmd[[
-    autocmd TermClose * execute 'bdelete! ' . expand('<abuf>')
-]]
