@@ -1,6 +1,6 @@
 local ok, npairs = pcall(require, "nvim-autopairs")
 if not ok then
-    print("Error: Could not find nvim-autopairs (autopairs.lua)")
+    print("Error: Could not find nvim-autopairs (nvim_autopairs.lua)")
     return
 end
 
@@ -28,7 +28,7 @@ npairs.setup {
 local cmp_autopairs = require("nvim-autopairs.completion.cmp")
 local ok, cmp = pcall(require, "cmp")
 if not ok then
-    print("Error: Could not find cmp (autopairs.lua)")
+    print("Error: Could not find cmp (nvim_autopairs.lua)")
     return
 end
 cmp.event:on(

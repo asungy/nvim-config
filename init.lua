@@ -1,26 +1,25 @@
 -- Install plugins first
-require "asungy.plugins"
+require "user.general.plugins"
 
 -- LSP
--- require "asungy.lsp.installer"
--- require "asungy.lsp.config"
+-- require "user.lsp.installer"
+-- require "user.lsp.config"
 
 -- Fonts/icons
-require "asungy.nvim_web_devicons"
+require "user.plugin.nvim_web_devicons"
 
 -- Others
-require "asungy.general.autocmds"
-
-require "asungy.autopairs"
-require "asungy.completions"
-require "asungy.dashboard"
-require "asungy.gitsigns"
-require "asungy.keymaps"
-require "asungy.lightspeed"
-require "asungy.neovide"
-require "asungy.nvim_tree"
-require "asungy.options"
-require "asungy.telescope"
-require "asungy.theme"
-require "asungy.toggleterm"
-require "asungy.treesitter"
+require "user.general.autocmds"
+require "user.general.keymaps"
+require "user.general.options"
+require "user.general.theme"
+require "user.other.neovide"
+require "user.plugin.cmp"
+require "user.plugin.dashboard"
+require "user.plugin.gitsigns"
+require "user.plugin.lightspeed"
+require "user.plugin.nvim_autopairs"
+require "user.plugin.nvim_tree"
+require "user.plugin.nvim_treesitter"
+require "user.plugin.telescope"
+require "user.plugin.toggleterm"
