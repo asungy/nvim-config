@@ -42,9 +42,6 @@ return packer.startup(function(use)
     -- package manager
     use "wbthomason/packer.nvim"
 
-    -- splash screen
-    use "glepnir/dashboard-nvim"
-
     -- color themes
     use "joshdick/onedark.vim"
     use "morhetz/gruvbox"

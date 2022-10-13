@@ -77,6 +77,7 @@ local options = {
     tabstop = 4,                -- number of spaces that <Tab> counts for
     termguicolors = true,       -- enable 24-bit RGB color
     wildmenu = true,            -- enable "enhanced mode" of command-line completion
+    winbar = "%f",
     wrap = true,                -- set text wrap
     wrapmargin = 0,             -- number of characters from window border before wrapping starts
 }
