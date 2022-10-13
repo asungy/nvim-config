@@ -7,3 +7,9 @@ vim.cmd[[
 vim.cmd[[
     autocmd TermOpen * setlocal nonumber norelativenumber
 ]]
+
+-- Turn off smartindent for Dart files. Entering a new line with autopairs
+-- causes the closing pair to be unexpectedly indented.
+vim.cmd[[
+    autocmd FileType dart set nosmartindent
+]]
