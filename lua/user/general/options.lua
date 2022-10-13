@@ -23,11 +23,19 @@ status_fmt = status_fmt .. "%n "  -- buffer number
 status_fmt = status_fmt .. "%m"   -- modified flag
 status_fmt = status_fmt .. "%r"   -- readonly flag
 status_fmt = status_fmt .. "%y "  -- file type
-status_fmt = status_fmt .. "%f "  -- full file path
+status_fmt = status_fmt .. "%F "  -- absolute full file path
 status_fmt = status_fmt .. "%= "  -- separation point
 status_fmt = status_fmt .. "L:%l" -- current line number
 status_fmt = status_fmt .. "/%L " -- number of lines in buffer
 status_fmt = status_fmt .. "C:%v" -- column number
+
+-- winbar format string
+local winbar_fmt = ""
+winbar_fmt = winbar_fmt .. "%n "  -- buffer number
+winbar_fmt = winbar_fmt .. "%m "  -- modified flag
+winbar_fmt = winbar_fmt .. "%r"   -- readonly flag
+winbar_fmt = winbar_fmt .. "%y "  -- file type
+winbar_fmt = winbar_fmt .. "%f "  -- full file path
 
 local options = {
     autoindent = true,          -- copy indent from current line when creating new line
@@ -47,8 +55,8 @@ local options = {
     ignorecase = false,         -- ignore case in search patterns
     icon = true,                -- sets text to window title
     iconstring = "",            -- used for icon text of window
-    laststatus = 3,             -- value option to select when last window will have status line
-                                -- (3: global)
+    laststatus = 0,             -- value option to select when last window will have status line
+                                -- (0: never)
     list = true,                -- set list mode. useful for seeing trailing whitespaces
     listchars = listchars,      -- string used for list mode
     makeprg = "make",           -- program used for ":make" command
@@ -78,7 +86,7 @@ local options = {
     tabstop = 4,                -- number of spaces that <Tab> counts for
     termguicolors = true,       -- enable 24-bit RGB color
     wildmenu = true,            -- enable "enhanced mode" of command-line completion
-    winbar = "%f",
+    winbar = winbar_fmt,        -- set winbar format
     wrap = true,                -- set text wrap
     wrapmargin = 0,             -- number of characters from window border before wrapping starts
 }
