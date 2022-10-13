@@ -33,8 +33,8 @@ local options = {
     autoindent = true,          -- copy indent from current line when creating new line
     backup = false,             -- create backup file
     breakindent = true,         -- indent wrapped lines
-    clipboard = "unnamedplus",  --  use clipboard register '+'
-    cmdheight = 1,              --  number of lines used for the command line
+    clipboard = "unnamedplus",  -- use clipboard register '+'
+    cmdheight = 0,              -- number of lines used for the command line
     completeopt = {             -- show completion menu
         "menuone",
         "noselect",
@@ -47,11 +47,11 @@ local options = {
     ignorecase = false,         -- ignore case in search patterns
     icon = true,                -- sets text to window title
     iconstring = "",            -- used for icon text of window
-    laststatus = 2,             --  value option to select when last window will have status line
-                                -- (2: always)
+    laststatus = 0,             -- value option to select when last window will have status line
+                                -- (0: never)
     list = true,                -- set list mode. useful for seeing trailing whitespaces
     listchars = listchars,      -- string used for list mode
-    makeprg = "make",           --  program used for ":make" command
+    makeprg = "make",           -- program used for ":make" command
     matchpairs = {              -- characters that form pairs for '%' command
         "(:)",
         "[:]",
