@@ -69,6 +69,7 @@ local options = {
     shiftwidth = 4,             -- number of spaces to use for each step of (auto)indent
     showbreak = "+++ ",         -- string to put at start of lines that have been wrapped
     showtabline = 0,            -- when to show tabline (0: never)
+    smarttab = false,           -- enable smart tab
     smartindent = true,         -- enable smart indent
     splitbelow = true,          -- splitting window will put new window below the current one
     splitright = true,          -- splitting window will put new window to right of current one

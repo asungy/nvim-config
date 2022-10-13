@@ -12,7 +12,7 @@ npairs.setup {
         -- javascript = { "template_string" },
         -- java = false, -- don't check treesitter on Java
     },
-    disable_filetype = { "TelescopePrompt", "toggleterm",  },
+    disable_filetype = { "TelescopePrompt", "toggleterm", },
     fast_wrap = {
       map = '<M-e>',
       chars = { '{', '[', '(', '"', "'" },
