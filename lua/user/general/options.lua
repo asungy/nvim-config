@@ -47,8 +47,8 @@ local options = {
     ignorecase = false,         -- ignore case in search patterns
     icon = true,                -- sets text to window title
     iconstring = "",            -- used for icon text of window
-    laststatus = 0,             -- value option to select when last window will have status line
-                                -- (0: never)
+    laststatus = 3,             -- value option to select when last window will have status line
+                                -- (3: global)
     list = true,                -- set list mode. useful for seeing trailing whitespaces
     listchars = listchars,      -- string used for list mode
     makeprg = "make",           -- program used for ":make" command
