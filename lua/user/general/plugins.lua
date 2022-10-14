@@ -71,9 +71,14 @@ return packer.startup(function(use)
     -- Floating terminal window
     use "akinsho/toggleterm.nvim"
 
-    -- using packer.nvim
+    -- Fancy bufferlines
     use {'akinsho/bufferline.nvim', tag = "v2.*", requires = 'kyazdani42/nvim-web-devicons'}
 
+    -- Fancy status lines
+    use {
+        'nvim-lualine/lualine.nvim',
+        requires = { 'kyazdani42/nvim-web-devicons', opt = true }
+    }
     -- completion plugins
     use "hrsh7th/nvim-cmp"
     -- use "hrsh7th/cmp-buffer"
