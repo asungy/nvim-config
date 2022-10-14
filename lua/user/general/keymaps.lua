@@ -25,12 +25,12 @@ keymap("v", "<", "<gv", opts)
 keymap("v", ">", ">gv", opts)
 
 -- Move text up and down in visual mode
-keymap("v", "<A-j>", "<CMD>m .+1<CR>==", opts)
-keymap("v", "<A-k>", "<CMD>m .-2<CR>==", opts)
+keymap("v", "<A-j>", ":m .+1<CR>==", opts)
+keymap("v", "<A-k>", ":m .-2<CR>==", opts)
 
 -- Move text up and down in visual block mode
-keymap("x", "<A-j>", "<CMD>move '>+1<CR>gv-gv", opts)
-keymap("x", "<A-k>", "<CMD>move '<-2<CR>gv-gv", opts)
+keymap("x", "<A-j>", ":move '>+1<CR>gv-gv", opts)
+keymap("x", "<A-k>", ":move '<-2<CR>gv-gv", opts)
 
 -------------------------------------------------------------------------------
 -- Windowing
