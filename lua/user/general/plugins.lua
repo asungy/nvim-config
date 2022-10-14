@@ -105,11 +105,14 @@ return packer.startup(function(use)
     -- auto pairs
     use {
         "windwp/nvim-autopairs",
-        config = function() require("nvim-autopairs").setup {} end
+        config = function() require("nvim-autopairs").setup{} end,
     }
 
     -- Easily wrap text in character pairs (e.g. {}, (), [])
-    use "tpope/vim-surround"
+    use {
+        "kylechui/nvim-surround",
+        config = function() require("nvim-surround").setup{} end,
+    }
 
     -- Quick commenting/uncommenting
     use "tpope/vim-commentary"
