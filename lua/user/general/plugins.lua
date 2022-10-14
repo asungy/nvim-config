@@ -126,13 +126,17 @@ return packer.startup(function(use)
     -- allow vim to maximize/un-maximize window
     use "szw/vim-maximizer"
 
-    -- jumping around in neovim
-    use 'ggandor/lightspeed.nvim'
-
     -- markdown preview
     use {
         "iamcco/markdown-preview.nvim",
         run = function() fn["mkdp#util#install"]() end,
+    }
+
+    -- motion jumping plugin
+    use {
+        "phaazon/hop.nvim",
+        branch = 'v2',
+        config = function() require('hop').setup{} end,
     }
 
     -- Automatically set up your configuration after cloning packer.nvim

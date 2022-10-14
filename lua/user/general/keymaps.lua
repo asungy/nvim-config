@@ -25,12 +25,12 @@ keymap("v", "<", "<gv", opts)
 keymap("v", ">", ">gv", opts)
 
 -- Move text up and down in visual mode
-keymap("v", "<A-j>", ":m .+1<CR>==", opts)
-keymap("v", "<A-k>", ":m .-2<CR>==", opts)
+keymap("v", "<A-j>", "<CMD>m .+1<CR>==", opts)
+keymap("v", "<A-k>", "<CMD>m .-2<CR>==", opts)
 
 -- Move text up and down in visual block mode
-keymap("x", "<A-j>", ":move '>+1<CR>gv-gv", opts)
-keymap("x", "<A-k>", ":move '<-2<CR>gv-gv", opts)
+keymap("x", "<A-j>", "<CMD>move '>+1<CR>gv-gv", opts)
+keymap("x", "<A-k>", "<CMD>move '<-2<CR>gv-gv", opts)
 
 -------------------------------------------------------------------------------
 -- Windowing
@@ -44,10 +44,10 @@ keymap("n", "<C-l>", "<C-w>l", opts)
 
 -- Resizing
 -- Use <C-w>= to make windows equidistant
-keymap("n", "<C-Up>",    ":resize +2<CR>", opts)
-keymap("n", "<C-Down>",  ":resize -2<CR>", opts)
-keymap("n", "<C-Left>",  ":vertical resize -2<CR>", opts)
-keymap("n", "<C-Right>", ":vertical resize +2<CR>", opts)
+keymap("n", "<C-Up>",    "<CMD>resize +2<CR>", opts)
+keymap("n", "<C-Down>",  "<CMD>resize -2<CR>", opts)
+keymap("n", "<C-Left>",  "<CMD>vertical resize -2<CR>", opts)
+keymap("n", "<C-Right>", "<CMD>vertical resize +2<CR>", opts)
 
 -- Navigate through tabs
 keymap("n", "<S-l>", "gt", opts)
@@ -58,7 +58,7 @@ keymap("n", "<S-h>", "gT", opts)
 -------------------------------------------------------------------------------
 
 -- Open file explorer
-keymap("n", "<C-n>", ":NvimTreeToggle<CR>", opts)
+keymap("n", "<C-n>", "<CMD>NvimTreeToggle<CR>", opts)
 
 -- ToggleTerm normal mode
 keymap("t", "<Esc>", [[<C-\><C-n>]], opts)
@@ -72,38 +72,41 @@ keymap("", "<Space>", "<Nop>", opts)
 vim.g.mapleader = " "
 
 -- Open neovim configuration repo
-command = ":edit " .. nvim_dir .. "<CR>"
+command = "<CMD>edit " .. nvim_dir .. "<CR>"
 keymap("n", "<leader>cf", command, opts)
 
 -- Vertical window split
-keymap("n", "<leader>vs", ":vsplit<CR>", opts)
+keymap("n", "<leader>vs", "<CMD>vsplit<CR>", opts)
 
 -- New tab
-keymap("n", "<leader>nt", ":tabnew<CR>", opts)
+keymap("n", "<leader>nt", "<CMD>tabnew<CR>", opts)
 
 -- New buffer (to be tracked by Dashboard)
-keymap("n", "<leader>nb", ":DashboardNewFile<CR>", opts)
+-- keymap("n", "<leader>nb", "<CMD>DashboardNewFile<CR>", opts)
 
 -- Toggle window maximization
-keymap("n", "<leader>mt", ":MaximizerToggle!<CR>", opts)
+keymap("n", "<leader>mt", "<CMD>MaximizerToggle!<CR>", opts)
 
 -- Open terminal
-keymap("n", "<leader>tr", ":terminal<CR>", opts)
+keymap("n", "<leader>tr", "<CMD>terminal<CR>", opts)
 
 -- Telescope
-keymap("n", "<leader>bl", ":Telescope current_buffer_fuzzy_find<CR>", opts)
-keymap("n", "<leader>ch", ":Telescope command_history<CR>", opts)
-keymap("n", "<leader>cs", ":Telescope colorscheme<CR>", opts)
-keymap("n", "<leader>fb", ":Telescope buffers<CR>", opts)
-keymap("n", "<leader>fc", ":Telescope commands<CR>", opts)
-keymap("n", "<leader>fi", ":lua require 'telescope.builtin'.find_files{hidden=true, no_ignore=true}<CR>", opts)
-keymap("n", "<leader>fk", ":Telescope keymaps<CR>", opts)
-keymap("n", "<leader>fm", ":Telescope marks<CR>", opts)
-keymap("n", "<leader>fr", ":Telescope registers<CR>", opts)
-keymap("n", "<leader>gc", ":Telescope git_commits<CR>", opts)
-keymap("n", "<leader>gi", ":Telescope git_files<CR>", opts)
-keymap("n", "<leader>gs", ":Telescope grep_string<CR>", opts)
-keymap("n", "<leader>ht", ":Telescope help_tags<CR>", opts)
-keymap("n", "<leader>jl", ":Telescope jumplist<CR>", opts)
-keymap("n", "<leader>lg", ":Telescope live_grep<CR>", opts)
+keymap("n", "<leader>bl", "<CMD>Telescope current_buffer_fuzzy_find<CR>", opts)
+keymap("n", "<leader>ch", "<CMD>Telescope command_history<CR>", opts)
+keymap("n", "<leader>cs", "<CMD>Telescope colorscheme<CR>", opts)
+keymap("n", "<leader>fb", "<CMD>Telescope buffers<CR>", opts)
+keymap("n", "<leader>fc", "<CMD>Telescope commands<CR>", opts)
+keymap("n", "<leader>fi", "<CMD>lua require 'telescope.builtin'.find_files{hidden=true, no_ignore=true}<CR>", opts)
+keymap("n", "<leader>fk", "<CMD>Telescope keymaps<CR>", opts)
+keymap("n", "<leader>fm", "<CMD>Telescope marks<CR>", opts)
+keymap("n", "<leader>fr", "<CMD>Telescope registers<CR>", opts)
+keymap("n", "<leader>gc", "<CMD>Telescope git_commits<CR>", opts)
+keymap("n", "<leader>gi", "<CMD>Telescope git_files<CR>", opts)
+keymap("n", "<leader>gs", "<CMD>Telescope grep_string<CR>", opts)
+keymap("n", "<leader>ht", "<CMD>Telescope help_tags<CR>", opts)
+keymap("n", "<leader>jl", "<CMD>Telescope jumplist<CR>", opts)
+keymap("n", "<leader>lg", "<CMD>Telescope live_grep<CR>", opts)
 
+-- Hop
+keymap("", "s", "<CMD>HopWordMW<CR>", opts)
+keymap("", "S", "<CMD>HopChar1MW<CR>", opts)
