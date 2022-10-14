@@ -72,7 +72,11 @@ return packer.startup(function(use)
     use "akinsho/toggleterm.nvim"
 
     -- Fancy bufferlines
-    use {'akinsho/bufferline.nvim', tag = "v2.*", requires = 'kyazdani42/nvim-web-devicons'}
+    use {
+        'akinsho/bufferline.nvim',
+        tag = "v2.*",
+        requires = 'kyazdani42/nvim-web-devicons',
+    }
 
     -- Fancy status lines
     use {
