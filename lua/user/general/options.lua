@@ -55,8 +55,8 @@ local options = {
     ignorecase = false,         -- ignore case in search patterns
     icon = true,                -- sets text to window title
     iconstring = "",            -- used for icon text of window
-    laststatus = 0,             -- value option to select when last window will have status line
-                                -- (0: never)
+    laststatus = 2,             -- value option to select when last window will have status line
+                                -- (2: always)
     list = true,                -- set list mode. useful for seeing trailing whitespaces
     listchars = listchars,      -- string used for list mode
     makeprg = "make",           -- program used for ":make" command
@@ -86,7 +86,7 @@ local options = {
     tabstop = 4,                -- number of spaces that <Tab> counts for
     termguicolors = true,       -- enable 24-bit RGB color
     wildmenu = true,            -- enable "enhanced mode" of command-line completion
-    winbar = winbar_fmt,        -- set winbar format
+    winbar = "",        -- set winbar format
     wrap = true,                -- set text wrap
     wrapmargin = 0,             -- number of characters from window border before wrapping starts
 }
