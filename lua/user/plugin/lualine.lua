@@ -24,12 +24,70 @@ lualine.setup {
         }
     },
     sections = {
-        lualine_a = {'mode'},
-        lualine_b = {'branch', 'diff', 'diagnostics'},
-        lualine_c = {'filename'},
-        lualine_x = {'encoding', 'fileformat', 'filetype'},
-        lualine_y = {'progress'},
-        lualine_z = {'location'}
+        lualine_a = {
+            {
+                'mode',
+                icons_enabled = true,
+                icon = '',
+                padding = 2,
+            }
+        },
+        lualine_b = {
+            {
+                'branch',
+                icons_enabled = true,
+                icon = '',
+                padding = 2,
+            },
+            'diff',
+            'diagnostics',
+        },
+        lualine_c = {
+            {
+                'filename',
+                file_status = true,
+                path = 1, -- 1: relative path
+                symbols = {
+                    modified = '',
+                    readonly = '',
+                    unnamed  = '',
+                    newfile  = '',
+                },
+                padding = 2,
+            }
+        },
+        lualine_x = {
+            {
+                'encoding',
+                icons_enabled = true,
+                icon = '',
+                padding = 2,
+            },
+            {
+                'fileformat',
+                padding = 2,
+            },
+            {
+                'filetype',
+                padding = 4,
+            },
+        },
+        lualine_y = {
+            {
+                'progress',
+                icons_enabled = true,
+                icon = '',
+                padding = 4,
+            },
+        },
+        lualine_z = {
+            {
+                'location',
+                icons_enabled = true,
+                icon = '',
+                padding = 3,
+            }
+        },
     },
     inactive_sections = {
         lualine_a = {},
