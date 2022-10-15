@@ -13,3 +13,8 @@ vim.cmd[[
 vim.cmd[[
     autocmd FileType dart set nosmartindent
 ]]
+
+-- Set tab spacing for Dart files.
+vim.cmd[[
+    autocmd FileType dart setlocal tabstop=2 shiftwidth=2 expandtab
+]]
