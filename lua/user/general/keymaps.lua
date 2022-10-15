@@ -110,3 +110,6 @@ keymap("n", "<leader>lg", "<CMD>Telescope live_grep<CR>", opts)
 -- Hop
 keymap("", "s", "<CMD>HopWordMW<CR>", opts)
 keymap("", "S", "<CMD>HopChar1MW<CR>", opts)
+
+-- Bufferline
+keymap("n", "<leader>pb", "<CMD>BufferLinePick<CR>", opts)
