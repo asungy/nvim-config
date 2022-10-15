@@ -98,19 +98,7 @@ lualine.setup {
         lualine_z = {}
     },
     tabline = {},
-    winbar = {
-        lualine_a = {},
-        lualine_b = {},
-        lualine_c = {
-            {
-                'buffers',
-                mode = 4, -- 4: buffer name + buffer number
-            },
-        },
-        lualine_x = {},
-        lualine_y = {},
-        lualine_z = {}
-    },
+    winbar = {},
     inactive_winbar = {},
     extensions = {"nvim-tree", "toggleterm"},
 }
