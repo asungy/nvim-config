@@ -6,7 +6,7 @@ end
 
 bufferline.setup{
     options = {
-        mode = "tabs",
+        mode = "buffers",
         -- Shift over tabs when opening NvimTree
         offsets = {
             {
@@ -15,5 +15,8 @@ bufferline.setup{
                 separator = true,
             },
         },
+        numbers = "buffer_id",
+        modified_icon = '',
+        sort_by = 'tabs',
     },
 }
