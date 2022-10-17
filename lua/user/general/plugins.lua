@@ -152,13 +152,15 @@ return packer.startup(function(use)
     }
 
     use {
-        "lukas-reineke/indent-blankline.nvim",
+        "rcarriga/nvim-notify",
         config = function()
-            require('indent_blankline').setup{}
+            require('notify').setup{}
         end,
-        run = function()
-            vim.g.indent_blankline_show_trailing_blankline_indent = false
-        end,
+    }
+
+    -- vertical lines for indents
+    use {
+        "lukas-reineke/indent-blankline.nvim",
     }
 
     -- Automatically set up your configuration after cloning packer.nvim
