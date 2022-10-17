@@ -119,7 +119,10 @@ return packer.startup(function(use)
     }
 
     -- Quick commenting/uncommenting
-    use "tpope/vim-commentary"
+    use {
+        'numToStr/Comment.nvim',
+        config = function() require('Comment').setup{} end,
+    }
 
     -- Git wrapper
     use {
@@ -143,7 +146,19 @@ return packer.startup(function(use)
     use {
         "phaazon/hop.nvim",
         branch = 'v2',
-        config = function() require('hop').setup{} end,
+        config = function()
+            require('hop').setup{}
+        end,
+    }
+
+    use {
+        "lukas-reineke/indent-blankline.nvim",
+        config = function()
+            require('indent_blankline').setup{}
+        end,
+        run = function()
+            vim.g.indent_blankline_show_trailing_blankline_indent = false
+        end,
     }
 
     -- Automatically set up your configuration after cloning packer.nvim
