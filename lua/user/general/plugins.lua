@@ -54,8 +54,9 @@ return packer.startup(function(use)
     use "nvim-lua/plenary.nvim"
 
     -- language server
-    -- use "neovim/nvim-lspconfig"
-    -- use "williamboman/nvim-lsp-installer"
+    use "neovim/nvim-lspconfig"
+    use "williamboman/mason.nvim"
+    use "williamboman/mason-lspconfig.nvim"
 
     -- Telescope
     use "nvim-telescope/telescope.nvim"
