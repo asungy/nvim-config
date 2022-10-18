@@ -43,8 +43,8 @@ return packer.startup(function(use)
     use "wbthomason/packer.nvim"
 
     -- color themes
-    use "joshdick/onedark.vim"
-    use "morhetz/gruvbox"
+    use "navarasu/onedark.nvim"
+    use "ellisonleao/gruvbox.nvim"
     use "folke/tokyonight.nvim"
 
     -- lua implementation of Popup API
