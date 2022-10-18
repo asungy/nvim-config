@@ -6,6 +6,15 @@ local opts = {
 local nvim_dir = os.getenv("HOME") .. "/.config/nvim"
 local command
 
+-- Helpful for key-menu plugin
+function set_desc_opts(desc)
+    return {
+        noremap = true,
+        silent = true,
+        desc = desc,
+    }
+end
+
 -------------------------------------------------------------------------------
 -- Editing
 -------------------------------------------------------------------------------
@@ -81,9 +90,6 @@ keymap("n", "<leader>vs", "<CMD>vsplit<CR>", opts)
 -- New tab
 keymap("n", "<leader>nt", "<CMD>tabnew<CR>", opts)
 
--- New buffer (to be tracked by Dashboard)
--- keymap("n", "<leader>nb", "<CMD>DashboardNewFile<CR>", opts)
-
 -- Toggle window maximization
 keymap("n", "<leader>mt", "<CMD>MaximizerToggle!<CR>", opts)
 
@@ -108,13 +114,13 @@ keymap("n", "<leader>jl", "<CMD>Telescope jumplist<CR>", opts)
 keymap("n", "<leader>gr", "<CMD>Telescope live_grep<CR>", opts)
 
 -- LSP
-keymap("n", "<leader>lh", "<CMD>lua vim.diagnostic.open_float()<CR>", opts)
-keymap("n", "<leader>lp", "<CMD>lua vim.diagnostic.goto_prev()<CR>", opts)
-keymap("n", "<leader>ln", "<CMD>lua vim.diagnostic.goto_next()<CR>", opts)
+keymap("n", "<leader>lh", "<CMD>lua vim.diagnostic.open_float()<CR>", set_desc_opts("Hover info"))
+keymap("n", "<leader>lp", "<CMD>lua vim.diagnostic.goto_prev()<CR>",  set_desc_opts("Previous"))
+keymap("n", "<leader>ln", "<CMD>lua vim.diagnostic.goto_next()<CR>",  set_desc_opts("Next"))
 
 -- Hop
-keymap("", "s", "<CMD>HopWordMW<CR>", opts)
-keymap("", "S", "<CMD>HopChar1MW<CR>", opts)
+keymap("", "s", "<CMD>HopChar1MW<CR>", opts)
+keymap("", "S", "<CMD>HopChar2MW<CR>", opts)
 
 -- Bufferline
 keymap("n", "<leader>pb", "<CMD>BufferLinePick<CR>", opts)

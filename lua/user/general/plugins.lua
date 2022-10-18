@@ -165,6 +165,8 @@ return packer.startup(function(use)
         "lukas-reineke/indent-blankline.nvim",
     }
 
+    use "linty-org/key-menu.nvim"
+
     -- Automatically set up your configuration after cloning packer.nvim
     if PACKER_BOOTSTRAP then require("packer").sync()
     end
