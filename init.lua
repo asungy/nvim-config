@@ -1,10 +1,6 @@
 -- Install plugins first
 require "user.general.plugins"
 
--- LSP
--- require "user.lsp.installer"
--- require "user.lsp.config"
-
 -- Fonts/icons
 require "user.plugin.nvim_web_devicons"
 
