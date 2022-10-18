@@ -105,7 +105,12 @@ keymap("n", "<leader>gi", "<CMD>Telescope git_files<CR>", opts)
 keymap("n", "<leader>gs", "<CMD>Telescope grep_string<CR>", opts)
 keymap("n", "<leader>ht", "<CMD>Telescope help_tags<CR>", opts)
 keymap("n", "<leader>jl", "<CMD>Telescope jumplist<CR>", opts)
-keymap("n", "<leader>lg", "<CMD>Telescope live_grep<CR>", opts)
+keymap("n", "<leader>gr", "<CMD>Telescope live_grep<CR>", opts)
+
+-- LSP
+keymap("n", "<leader>lh", "<CMD>lua vim.diagnostic.open_float()<CR>", opts)
+keymap("n", "<leader>lp", "<CMD>lua vim.diagnostic.goto_prev()<CR>", opts)
+keymap("n", "<leader>ln", "<CMD>lua vim.diagnostic.goto_next()<CR>", opts)
 
 -- Hop
 keymap("", "s", "<CMD>HopWordMW<CR>", opts)
@@ -113,3 +118,4 @@ keymap("", "S", "<CMD>HopChar1MW<CR>", opts)
 
 -- Bufferline
 keymap("n", "<leader>pb", "<CMD>BufferLinePick<CR>", opts)
+
