@@ -78,6 +78,7 @@ cmp.setup({
         end
     end,
     sources = cmp.config.sources({
+        { name = "nvim_lsp"},
         { name = "luasnip" },
         { name = "buffer" },
         { name = "path" },
@@ -87,9 +88,10 @@ cmp.setup({
         format = function(entry, vim_item)
             -- The order of this table has to match the order of the 'sources'
             vim_item.menu = ({
-                luasnip = "[Snippet]",
-                buffer = "[Buffer]",
-                path = "[Path]",
+                nvim_lsp = "",
+                luasnip = "",
+                buffer = "",
+                path = "",
             })[entry.source.name]
             return vim_item
         end,
