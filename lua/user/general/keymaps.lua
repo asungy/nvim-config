@@ -114,9 +114,10 @@ keymap("n", "<leader>jl", "<CMD>Telescope jumplist<CR>", opts)
 keymap("n", "<leader>gr", "<CMD>Telescope live_grep<CR>", opts)
 
 -- LSP
+keymap("n", "<leader>la", "<CMD>lua vim.lsp.buf.code_action()<CR>",   set_desc_opts("Code action"))
 keymap("n", "<leader>lh", "<CMD>lua vim.diagnostic.open_float()<CR>", set_desc_opts("Hover info"))
-keymap("n", "<leader>lp", "<CMD>lua vim.diagnostic.goto_prev()<CR>",  set_desc_opts("Previous"))
 keymap("n", "<leader>ln", "<CMD>lua vim.diagnostic.goto_next()<CR>",  set_desc_opts("Next"))
+keymap("n", "<leader>lp", "<CMD>lua vim.diagnostic.goto_prev()<CR>",  set_desc_opts("Previous"))
 
 -- Hop
 keymap("", "s", "<CMD>HopChar1MW<CR>", opts)
