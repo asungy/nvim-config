@@ -4,9 +4,6 @@ require "user.general.plugins"
 -- LSP
 require "user.lsp"
 
--- Fonts/icons
-require "user.plugin.nvim_web_devicons"
-
 -- Others
 require "user.general.autocmds"
 require "user.general.keymaps"

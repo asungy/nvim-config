@@ -44,14 +44,11 @@ return packer.startup(function(use)
 
     -- color themes
     use "navarasu/onedark.nvim"
-    use "ellisonleao/gruvbox.nvim"
+    use "sainnhe/gruvbox-material"
     use "folke/tokyonight.nvim"
 
     -- lua implementation of Popup API
     use "nvim-lua/popup.nvim"
-
-    -- useful lua functions used by lots of plugings
-    use "nvim-lua/plenary.nvim"
 
     -- language server
     use "neovim/nvim-lspconfig"
@@ -59,7 +56,10 @@ return packer.startup(function(use)
     use "williamboman/mason-lspconfig.nvim"
 
     -- Telescope
-    use "nvim-telescope/telescope.nvim"
+    use {
+        "nvim-telescope/telescope.nvim",
+        requires = "nvim-lua/plenary.nvim"
+    }
     -- Requires: gcc/clang and make
     use {"nvim-telescope/telescope-fzf-native.nvim", run = "make" }
 
@@ -85,19 +85,16 @@ return packer.startup(function(use)
         requires = { 'kyazdani42/nvim-web-devicons', opt = true }
     }
     -- completion plugins
-    use "hrsh7th/nvim-cmp"
     use "hrsh7th/cmp-buffer"
-    use "hrsh7th/cmp-path"
     use "hrsh7th/cmp-cmdline"
-    use "saadparwaiz1/cmp_luasnip"
     use "hrsh7th/cmp-nvim-lsp"
+    use "hrsh7th/cmp-path"
+    use "hrsh7th/nvim-cmp"
+    use "saadparwaiz1/cmp_luasnip"
 
     -- snippets
     use "L3MON4D3/LuaSnip"
     use "rafamadriz/friendly-snippets"
-
-    -- cool fonts
-    use "kyazdani42/nvim-web-devicons"
 
     -- file explorer
     use {
