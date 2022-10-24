@@ -88,7 +88,7 @@ keymap("n", "<leader>cf", command, opts)
 keymap("n", "<leader>vs", "<CMD>vsplit<CR>", opts)
 
 -- New tab
-keymap("n", "<leader>nt", "<CMD>tabnew<CR>", opts)
+keymap("n", "<leader>nt", "<CMD>tabedit .<CR>", opts)
 
 -- Toggle window maximization
 keymap("n", "<leader>mt", "<CMD>MaximizerToggle!<CR>", opts)
