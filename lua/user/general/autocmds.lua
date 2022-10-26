@@ -10,9 +10,9 @@ vim.cmd[[
 
 -- Turn off smartindent for Dart files. Entering a new line with autopairs
 -- causes the closing pair to be unexpectedly indented.
-vim.cmd[[
-    autocmd FileType dart set nosmartindent
-]]
+-- vim.cmd[[
+--     autocmd FileType dart set nosmartindent
+-- ]]
 
 -- Set tab spacing for Dart files.
 vim.cmd[[
