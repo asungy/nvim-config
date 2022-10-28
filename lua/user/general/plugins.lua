@@ -173,6 +173,8 @@ return packer.startup(function(use)
         requires = "kevinhwang91/nvim-hlslens",
     }
 
+    -- Better highlight search
+    use { "kevinhwang91/nvim-hlslens", }
 
     -- Automatically set up your configuration after cloning packer.nvim
     if PACKER_BOOTSTRAP then require("packer").sync()

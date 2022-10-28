@@ -127,3 +127,10 @@ keymap("", "S", "<CMD>HopChar2MW<CR>", opts)
 -- Bufferline
 keymap("n", "<leader>pb", "<CMD>BufferLinePick<CR>", opts)
 
+-- hlslens
+keymap("n", "n", [[<Cmd>execute('normal! ' . v:count1 . 'n')<CR><Cmd>lua require('hlslens').start()<CR>]], opts)
+keymap("n", "N", [[<Cmd>execute('normal! ' . v:count1 . 'N')<CR><Cmd>lua require('hlslens').start()<CR>]], opts)
+keymap("n", "*", [[*<Cmd>lua require('hlslens').start()<CR>]], opts)
+keymap("n", "#", [[#<Cmd>lua require('hlslens').start()<CR>]], opts)
+keymap("n", "g*", [[g*<Cmd>lua require('hlslens').start()<CR>]], opts)
+keymap("n", "g#", [[g#<Cmd>lua require('hlslens').start()<CR>]], opts)
