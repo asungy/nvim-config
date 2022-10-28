@@ -158,11 +158,21 @@ return packer.startup(function(use)
     }
 
     -- vertical lines for indents
+    use { "lukas-reineke/indent-blankline.nvim", }
+
+    -- Keymap hints
+    use { "linty-org/key-menu.nvim", }
+
+    -- Cool scroll bar
     use {
-        "lukas-reineke/indent-blankline.nvim",
+        "petertriho/nvim-scrollbar",
+        config = function()
+            require("scrollbar").setup()
+            require("scrollbar.handlers.search").setup()
+        end,
+        requires = "kevinhwang91/nvim-hlslens",
     }
 
-    use "linty-org/key-menu.nvim"
 
     -- Automatically set up your configuration after cloning packer.nvim
     if PACKER_BOOTSTRAP then require("packer").sync()
