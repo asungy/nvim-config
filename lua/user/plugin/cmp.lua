@@ -67,6 +67,12 @@ cmp.setup({
     },
     -- When to enable completion
     enabled = function()
+        -- Disable for prompts
+        buftype = vim.api.nvim_buf_get_option(0, "buftype")
+        if buftype == "prompt" then
+            return false
+        end
+
         local context = require('cmp.config.context')
         -- keep command mode completion enabled
         if vim.api.nvim_get_mode().mode == "c" then

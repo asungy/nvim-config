@@ -108,7 +108,6 @@ return packer.startup(function(use)
     -- auto pairs
     use {
         "windwp/nvim-autopairs",
-        config = function() require("nvim-autopairs").setup{} end,
     }
 
     -- Easily wrap text in character pairs (e.g. {}, (), [])
