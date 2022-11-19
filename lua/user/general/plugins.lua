@@ -170,6 +170,12 @@ return packer.startup(function(use)
     -- Better highlight search
     use { "kevinhwang91/nvim-hlslens", }
 
+    -- Auto pairs
+    --
+    -- Note: previously had issues with windwp/nvim-autopairs where the plugin
+    -- would do weird indenting.
+    use "jiangmiao/auto-pairs"
+
     -- Automatically set up your configuration after cloning packer.nvim
     if PACKER_BOOTSTRAP then require("packer").sync()
     end
