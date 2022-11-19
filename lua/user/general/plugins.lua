@@ -105,11 +105,6 @@ return packer.startup(function(use)
         tag = "nightly" -- optional, updated every week. (see issue #1193)
     }
 
-    -- auto pairs
-    use {
-        "windwp/nvim-autopairs",
-    }
-
     -- Easily wrap text in character pairs (e.g. {}, (), [])
     use {
         "kylechui/nvim-surround",
