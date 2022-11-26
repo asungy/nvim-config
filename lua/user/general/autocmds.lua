@@ -13,7 +13,10 @@ vim.cmd[[
     autocmd FileType dart setlocal tabstop=2 shiftwidth=2 expandtab
 ]]
 
--- Set tab spacing for TypeScript React
+-- Set tab spacing for TypeScript
+vim.cmd[[
+    autocmd FileType typescript setlocal tabstop=2 shiftwidth=2 expandtab
+]]
 vim.cmd[[
     autocmd FileType typescriptreact setlocal tabstop=2 shiftwidth=2 expandtab
 ]]
