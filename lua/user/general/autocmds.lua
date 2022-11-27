@@ -20,3 +20,11 @@ vim.cmd[[
 vim.cmd[[
     autocmd FileType typescriptreact setlocal tabstop=2 shiftwidth=2 expandtab
 ]]
+
+-- Set tab spacing for JavaScript
+vim.cmd[[
+    autocmd FileType javascript setlocal tabstop=2 shiftwidth=2 expandtab
+]]
+vim.cmd[[
+    autocmd FileType javascriptreact setlocal tabstop=2 shiftwidth=2 expandtab
+]]
