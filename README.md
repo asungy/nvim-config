@@ -22,6 +22,3 @@ git clone git@github.com:asungy/nvim-config.git ~/.config/nvim
 ```
 cp -r ~/.config/nvim/dotfiles/. $HOME
 ```
-
-## Treesitter dependencies
-- [Golang](https://go.dev/doc/install)
