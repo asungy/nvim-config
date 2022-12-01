@@ -6,9 +6,8 @@ main() {
     # Install APT packages
     apt update && \
     apt install -y \
-        ccls \
+        build-essential \
         git \
-        gopls \
         ripgrep \
     && echo "Installed apt packages"
 
