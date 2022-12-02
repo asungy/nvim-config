@@ -4,10 +4,9 @@
 
 main() {
     # Install APT packages
-    apt update && \
-    apt install -y \
+    sudo apt update && \
+    sudo apt install -y \
         build-essential \
-        git \
         ripgrep \
     && echo "Installed apt packages"
 
