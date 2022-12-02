@@ -1,13 +1,12 @@
 #!/bin/bash
 
-# Run as `sudo`
-
 main() {
     # Install APT packages
     sudo apt update && \
     sudo apt install -y \
         build-essential \
         ripgrep \
+        wl-clipboard \
     && echo "Installed apt packages"
 
     # Install FZF
