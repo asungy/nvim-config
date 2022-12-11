@@ -1,13 +1,9 @@
 #!/bin/bash
 
 main() {
-    # Install APT packages
-    sudo apt update && \
-    sudo apt install -y \
-        build-essential \
-        ripgrep \
-        wl-clipboard \
-    && echo "Installed apt packages"
+    # Install Pacman packages
+    sudo pacman -Syu && \
+    sudo pacman -Syu ripgrep wl-clipboard
 
     # Install FZF
     git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
