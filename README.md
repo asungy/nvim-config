@@ -13,7 +13,7 @@ For SSH:
 git clone git@github.com:asungy/nvim-config.git ~/.config/nvim
 ```
 
-## Install dependencies (Ubuntu)
+## Install dependencies (Arch)
 ```
 ~/.config/nvim/scripts/install_deps.sh
 ```
