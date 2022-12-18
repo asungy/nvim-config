@@ -33,3 +33,8 @@ vim.cmd[[
 vim.cmd[[
     autocmd FileType css setlocal tabstop=2 shiftwidth=2 expandtab
 ]]
+
+-- Set tab spacing for HTML
+vim.cmd[[
+    autocmd FileType html setlocal tabstop=2 shiftwidth=2 expandtab
+]]
