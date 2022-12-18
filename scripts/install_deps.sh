@@ -2,8 +2,12 @@
 
 main() {
     # Install Pacman packages
-    sudo pacman -Syu && \
-    sudo pacman -Syu ripgrep wl-clipboard
+    sudo pacman -Syu \
+    && sudo pacman -Syu \
+        ripgrep \
+        wl-clipboard \
+        xclip \
+    && :
 
     # Install FZF
     git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
