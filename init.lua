@@ -1,23 +1,12 @@
--- Install plugins first
-require "user.general.plugins"
-
--- LSP
-require "user.lsp"
-
--- Others
+-- General
 require "user.general.autocmds"
 require "user.general.keymaps"
 require "user.general.options"
 require "user.general.theme"
+
+-- LSP
+require "user.lsp"
+
+-- Plugins
+require "user.general.plugins"
 require "user.other.neovide"
-require "user.plugin.bufferline"
-require "user.plugin.cmp"
-require "user.plugin.gitsigns"
-require "user.plugin.indent_blankline"
-require "user.plugin.key_menu"
-require "user.plugin.lualine"
-require "user.plugin.nvim_hlslens"
-require "user.plugin.nvim_tree"
-require "user.plugin.nvim_treesitter"
-require "user.plugin.telescope"
-require "user.plugin.toggleterm"
