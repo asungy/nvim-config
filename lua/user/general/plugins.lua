@@ -774,7 +774,7 @@ lazy.setup({
     },
     { -- Interactive REPL
         "hkupty/iron.nvim",
-        lazy = false,
+        lazy = true,
         config = function()
             require("iron.core").setup({
                 config = {
@@ -789,7 +789,7 @@ lazy.setup({
                     close_window_on_exit = true,
                     repl_definition = {
                      -- forcing a default
-                      -- python = require("iron.fts.python").ipython,
+                      python = require("iron.fts.python").ipython,
                     },
                     -- Repl position. Check `iron.view` for more options,
                     -- currently there are four positions: left, right, bottom, top,
