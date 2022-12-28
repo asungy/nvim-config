@@ -448,7 +448,6 @@ lazy.setup({
         },
         config = function()
             require("nvim-tree").setup({
-             -- BEGIN_DEFAULT_OPTS
                   auto_reload_on_write = true,
                   create_in_closed_folder = false,
                   disable_netrw = false,
@@ -460,7 +459,7 @@ lazy.setup({
                   open_on_setup_file = false,
                   open_on_tab = false,
                   ignore_buf_on_tab_change = {},
-                  sort_by = "name",
+                  sort_by = "extension",
                   root_dirs = {},
                   prefer_startup_root = true,
                   sync_root_with_cwd = true,
