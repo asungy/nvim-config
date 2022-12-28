@@ -13,6 +13,7 @@
   "gruvbox-material": { "branch": "master", "commit": "3ac46b45892fb4a641c1462947d3b1ad0b283981" },
   "hop.nvim": { "branch": "master", "commit": "90db1b2c61b820e230599a04fedcd2679e64bd07" },
   "indent-blankline.nvim": { "branch": "master", "commit": "c4c203c3e8a595bc333abaf168fcb10c13ed5fb7" },
+  "iron.nvim": { "branch": "master", "commit": "bd5ad2a04195fb7a739eb973fa2d9f7ccc35ab4b" },
   "key-menu.nvim": { "branch": "master", "commit": "6951c45cbb0b2add549d282b0b526d1f0322f96e" },
   "lazy.nvim": { "branch": "main", "commit": "dc03fa1ae57c3949874c9cae50074a83232c4eed" },
   "lualine.nvim": { "branch": "master", "commit": "fffbcb829288c3ca366f17cdb8d46aefb5c1d6f3" },

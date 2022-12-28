@@ -137,3 +137,9 @@ keymap("n", "*", [[*<Cmd>lua require('hlslens').start()<CR>]], opts)
 keymap("n", "#", [[#<Cmd>lua require('hlslens').start()<CR>]], opts)
 keymap("n", "g*", [[g*<Cmd>lua require('hlslens').start()<CR>]], opts)
 keymap("n", "g#", [[g#<Cmd>lua require('hlslens').start()<CR>]], opts)
+
+-- iron
+keymap("n", "<leader>rs", "<CMD>IronRepl<CR>", opts)
+keymap("n", "<leader>rr", "<CMD>IronRestart<CR>", opts)
+keymap("n", "<leader>rf", "<CMD>IronFocus<CR>", opts)
+keymap("n", "<leader>rh", "<CMD>IronHide<CR>", opts)
