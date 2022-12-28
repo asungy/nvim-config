@@ -1,7 +1,3 @@
-require "user.lsp.mason"
-require "user.lsp.mason_lspconfig"
-require "user.lsp.nvim_lspconfig"
-
 local signs = {
     { name = "DiagnosticSignError", text = "", },
     { name = "DiagnosticSignWarn",  text = "", },
