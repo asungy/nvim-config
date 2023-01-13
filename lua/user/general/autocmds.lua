@@ -38,3 +38,8 @@ vim.cmd[[
 vim.cmd[[
     autocmd FileType html setlocal tabstop=2 shiftwidth=2 expandtab
 ]]
+
+-- Set tab spacing for Terraform
+vim.cmd[[
+    autocmd FileType tf setlocal tabstop=2 shiftwidth=2 expandtab
+]]
