@@ -41,5 +41,5 @@ vim.cmd[[
 
 -- Set tab spacing for Terraform
 vim.cmd[[
-    autocmd FileType tf setlocal tabstop=2 shiftwidth=2 expandtab
+    autocmd FileType terraform setlocal tabstop=2 shiftwidth=2 expandtab
 ]]
