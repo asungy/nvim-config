@@ -7,5 +7,5 @@ require "user.general.options"
 require "user.lsp"
 
 -- Plugins
-require "user.general.plugins"
+require "user.plugins"
 require "user.other.neovide"
