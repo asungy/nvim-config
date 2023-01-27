@@ -26,4 +26,4 @@ if not ok then
     return
 end
 
-lazy.setup({{import = "imports"}})
+lazy.setup({{import = "user.plugins.imports"}})
