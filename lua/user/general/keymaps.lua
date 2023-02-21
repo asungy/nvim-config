@@ -72,6 +72,9 @@ keymap("n", "<C-n>", "<CMD>NvimTreeToggle<CR>", opts)
 -- ToggleTerm normal mode
 keymap("t", "<Esc>", [[<C-\><C-n>]], opts)
 keymap("t", "<C-q>", "<Esc>", opts)
+
+-- Unmap Ctrl+Left-Click
+keymap("n", "<C-LeftMouse>", "<Nop>", opts)
 -------------------------------------------------------------------------------
 -- Leader key mappings
 -------------------------------------------------------------------------------
