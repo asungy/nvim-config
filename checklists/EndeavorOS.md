@@ -1,68 +1,71 @@
 # New Installation Checklist
 
 ## Welcome Launcher
--[x] Update Mirrors (Arch)
--[x] Update Mirrors (Endeavor OS)
--[x] Update System
--[x] Package Cleanup configuration
+-[ ] Update Mirrors (Arch)
+-[ ] Update Mirrors (Endeavor OS)
+-[ ] Update System
+-[ ] Package Cleanup configuration
 
 ## Dropbox/KeePassXC
--[x] Dropbox:
+-[ ] Dropbox:
   - `yay -S dropbox`
--[x] KeepassXC
+-[ ] KeepassXC
   - `sudo pacman -Syu keepassxc`
   - Set theme to native
   - Tools > Settings > Lock databases after inactivity of 300 sec
 
 ## Neovim
--[x] Install Neovim from https://github.com/neovim/neovim
--[x] Create ssh keys to clone [nvim-config repo](https://github.com/asungy/nvim-config)
+-[ ] Install Neovim from https://github.com/neovim/neovim
+-[ ] Create ssh keys to clone [nvim-config repo](https://github.com/asungy/nvim-config)
   - `ssh-keygen -b 4096 -t rsa`
--[x] `git clone git@github.com:asungy/nvim-config.git $HOME/.config/nvim`
--[x] `cp -r ~/.config/nvim/dotfiles/. $HOME`
--[x] If there are any errors, try:
+-[ ] `git clone git@github.com:asungy/nvim-config.git $HOME/.config/nvim`
+-[ ] `cp -r ~/.config/nvim/dotfiles/. $HOME`
+-[ ] If there are any errors, try:
   - `:TSUpdate`
   - `:Lazy sync`
 
 ## Konsole
--[x] Set font to FiraCode
+-[ ] Set font to FiraCode
 
 ## System
--[x] Enable sudo without password:
+-[ ] Enable sudo without password:
   - sudo visudo
   - Add `<USER> ALL=(ALL:ALL) NOPASSWD: ALL` to the end of the file.
   - Save to /etc/sudoers
 -[ ] Enable bluetooth:
   - All necessary packages for bluetooth should be installed by default.
   - `sudo systemctl start bluetooth`
+-[ ] Disable default directories
+  - Remove unwanted directories
+  - Disable in /etc/xdg/user-dirs.defaults
 
 ### Settings
--[x] Apperance:
+-[ ] Apperance:
   - Global theme: Breeze Dark Endeavor OS
--[x] Workspace behavior:
+-[ ] Workspace behavior:
   - Screen Edges: Turn off Windows dragged to top edge
   - Virtual Desktops: Add 4 workspaces
--[x] Window Management:
+-[ ] Window Management:
   - Task Switcher: Thumbnail Grid
--[x] Shortcuts:
+-[ ] Shortcuts:
   - Custom Shortcuts > Set Konsole to <Ctrl + Shift + T>
 
 ## Toolbar
--[x] Remove workspaces
--[x] Resize toolbar
--[x] Auto-hide
+-[ ] Remove workspaces
+-[ ] Resize toolbar
+-[ ] Auto-hide
 
 ## Browsers
--[x] Firefox:
+-[ ] Firefox:
     - Private browsing setup
--[x] Brave:
+-[ ] Brave:
   - Install with `yay -S brave-bin`
   - Private browsing setup
   - Extensions:
     - Dark Reader
 
 ## Development Environment
--[x] Docker
+-[ ] Docker
   - `sudo pacman -Syu docker`
   - `sudo systemctl enable docker`
   - `sudo usermod -aG docker ${USER}`
