@@ -51,6 +51,8 @@
   - Custom Shortcuts > Set Konsole to <Ctrl + Shift + T>
   - Set Maximize Window to <Meta + Up>
   - Set Minimize Window to <Meta + Down>
+  - Set Switch One Desktop to the Left to <Meta + Ctrl + Left>
+  - Set Switch One Desktop to the Right to <Meta + Ctrl + Right>
 
 ## Toolbar
 -[ ] Remove workspaces
