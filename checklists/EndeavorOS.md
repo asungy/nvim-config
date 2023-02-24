@@ -53,6 +53,8 @@
   - Set Minimize Window to <Meta + Down>
   - Set Switch One Desktop to the Left to <Meta + Ctrl + Left>
   - Set Switch One Desktop to the Right to <Meta + Ctrl + Right>
+-[ ] Input Devies:
+  - Keyboard > Turn on "NumLock on Plasma Startup"
 
 ## Toolbar
 -[ ] Remove workspaces
