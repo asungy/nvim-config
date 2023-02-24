@@ -3,6 +3,7 @@
 main() {
     sudo pacman -Syu \
         docker \
+        docker-compose \
         kde-system \
         kdeplasma-addons \
         keepassxc \

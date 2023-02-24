@@ -49,6 +49,8 @@
   - Task Switcher: Thumbnail Grid
 -[ ] Shortcuts:
   - Custom Shortcuts > Set Konsole to <Ctrl + Shift + T>
+  - Set Maximize Window to <Meta + Up>
+  - Set Minimize Window to <Meta + Down>
 
 ## Toolbar
 -[ ] Remove workspaces
