@@ -19,17 +19,8 @@ export VISUAL=nvim
 # Enable FZF
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
-# add Pulumi to the PATH
-export PATH=$PATH:$HOME/.pulumi/bin
-
 # AWS CLI bash completion
-complete -C '/usr/local/bin/aws_completer' aws
-
-# Add Go to PATH
-export PATH=$PATH:/usr/local/go/bin
-. "$HOME/.cargo/env"
-
-complete -C /usr/bin/terraform terraform
+# complete -C '/usr/local/bin/aws_completer' aws
 
 # Aliases
 alias playground='docker run --network host -it --rm --name playground ubuntu:latest /bin/bash'
