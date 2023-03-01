@@ -24,6 +24,10 @@
   - `:TSUpdate`
   - `:Lazy sync`
 
+## Packages
+- [ ] Remove `xf86-video-intel`. See [this](https://bbs.archlinux.org/viewtopic.php?pid=2021151#p2021151) for details.
+- [ ] Run `scripts/install_arch_packages.sh`
+
 ## Konsole
 - [ ] Set font to FiraCode
 
