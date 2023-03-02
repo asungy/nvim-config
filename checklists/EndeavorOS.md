@@ -48,6 +48,7 @@
   - Global theme: Breeze Dark Endeavor OS
 - [ ] Workspace behavior:
   - Screen Edges: Turn off Windows dragged to left or right edge
+  - Screen Edges: Disable top-left action
   - Virtual Desktops: Add 4 workspaces
 - [ ] Window Management:
   - Task Switcher: Thumbnail Grid
