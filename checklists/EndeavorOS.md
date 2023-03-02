@@ -37,7 +37,7 @@
   - `sudo systemctl start bluetooth`
 - [ ] Disable default directories
   - Remove unwanted directories
-  - Disable in /etc/xdg/user-dirs.defaults
+  - Disable in /etc/xdg/user-dirs.conf
 
 ### Settings
 - [ ] Apperance:
