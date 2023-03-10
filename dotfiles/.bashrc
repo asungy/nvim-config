@@ -22,6 +22,9 @@ export VISUAL=nvim
 # AWS CLI bash completion
 # complete -C '/usr/local/bin/aws_completer' aws
 
+# Remove annoying directories
+rm -fr ~/Documents
+
 # Aliases
 alias playground='docker run --network host -it --rm --name playground ubuntu:latest /bin/bash'
 alias playground-here='docker run --network host -it --rm -v "$(pwd)":/mnt/"${PWD##*/}" \
