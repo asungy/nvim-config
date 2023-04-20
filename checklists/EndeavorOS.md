@@ -82,3 +82,11 @@
   - `sudo systemctl enable docker`
   - `sudo usermod -aG docker ${USER}`
   - Log off and log on to see effects
+- [ ] Set up `git-delta`
+  - Edit ~/.gitconfig file:
+  ```toml
+    pager = delta --diff-so-fancy
+  [delta]
+    side-by-side = true
+    navigate = true
+  ```

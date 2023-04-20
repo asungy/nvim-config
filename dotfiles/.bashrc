@@ -31,3 +31,23 @@ alias playground-here='docker run --network host -it --rm -v "$(pwd)":/mnt/"${PW
                        --name playground-here \
                        --workdir /mnt/"${PWD##*/}" \
                        ubuntu:latest /bin/bash'
+
+###############################################################
+# A la Sam Williams
+###############################################################
+
+# Override FZF bindings for scrolling previews for consistency.
+export FZF_DEFAULT_OPTS="--bind \"ctrl-y:preview-up,ctrl-e:preview-down,ctrl-b:preview-page-up,ctrl-f:preview-page-down,ctrl-u:preview-half-page-up,ctrl-d:preview-half-page-down,shift-up:preview-top,shift-down:preview-bottom\""
+
+# Define custom command to read git diffs with delta and FZF
+if (command -v fzf >/dev/null 2>&1) && (command -v git >/dev/null 2>&1) && (command -v delta >/dev/null 2>&1); then
+    fzfdiff() {
+        project_root=$(git rev-parse --show-toplevel)
+        if [ -n "$project_root" ]; then
+            pushd "$project_root" >/dev/null
+            preview="\"git diff $@ --color=always -- {-1} | delta -w ${FZF_PREVIEW_COLUMNS:-$COLUMNS}\""
+            bash -c "git diff $@ --name-only | fzf -m --ansi --preview-window=top:80% --preview $preview"
+            popd >/dev/null
+        fi
+    }
+fi

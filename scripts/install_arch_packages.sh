@@ -4,6 +4,7 @@ main() {
     sudo pacman -Syu \
         docker \
         docker-compose \
+        git-delta \
         kde-system \
         kdeplasma-addons \
         keepassxc \
