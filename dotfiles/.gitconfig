@@ -1,0 +1,13 @@
+[user]
+name = asungy
+email = 62207329+asungy@users.noreply.github.com
+
+[init]
+defaultBranch = main
+
+[core]
+pager = delta --diff-so-fancy
+
+[delta]
+side-by-side = true
+navigate = true

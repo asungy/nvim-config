@@ -85,6 +85,7 @@
 - [ ] Set up `git-delta`
   - Edit ~/.gitconfig file:
   ```toml
+  [core]
     pager = delta --diff-so-fancy
   [delta]
     side-by-side = true
