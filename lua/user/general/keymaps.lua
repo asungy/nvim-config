@@ -123,6 +123,7 @@ keymap("n", "<leader>ld", "<CMD>lua vim.lsp.buf.definition()<CR>",  set_desc_opt
 keymap("n", "<leader>lr", "<CMD>lua vim.lsp.buf.references()<CR>",  set_desc_opts("Go to references"))
 keymap("n", "<leader>ls", "<CMD>lua vim.lsp.buf.document_symbol()<CR>",  set_desc_opts("List symbols"))
 keymap("n", "<leader>lt", "<CMD>lua vim.lsp.buf.type_definition()<CR>",  set_desc_opts("Go to type definition"))
+keymap("n", "<leader>li", "<CMD>lua vim.lsp.buf.implementation()<CR>",  set_desc_opts("List implementations"))
 
 keymap("n", "<leader>lh", "<CMD>lua vim.diagnostic.open_float()<CR>", set_desc_opts("Hover info"))
 keymap("n", "<leader>ll", "<CMD>lua vim.diagnostic.setloclist()<CR>",  set_desc_opts("List diagnostics"))
