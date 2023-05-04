@@ -2,6 +2,7 @@
 
 main() {
     sudo pacman -Syu \
+        cloc \
         docker \
         docker-compose \
         git-delta \
