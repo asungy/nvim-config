@@ -6,6 +6,7 @@ main() {
         docker \
         docker-compose \
         git-delta \
+        filelight \
         kde-system \
         kdeplasma-addons \
         keepassxc \
