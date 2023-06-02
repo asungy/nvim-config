@@ -5,8 +5,9 @@ main() {
         cloc \
         docker \
         docker-compose \
-        git-delta \
         filelight \
+        git-delta \
+        ibus \
         kde-system \
         kdeplasma-addons \
         keepassxc \

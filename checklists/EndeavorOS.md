@@ -82,3 +82,9 @@
   - `sudo systemctl enable docker`
   - `sudo usermod -aG docker ${USER}`
   - Log off and log on to see effects
+
+## Keyboard
+- [ ] Install IBus
+  - See: https://wiki.archlinux.org/title/IBus
+- [ ] Add Chinese
+- [ ] Add English (Dvorak)
