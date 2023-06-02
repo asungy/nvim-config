@@ -7,7 +7,7 @@ main() {
         docker-compose \
         filelight \
         git-delta \
-        ibus \
+        ibus-pinyin \
         kde-system \
         kdeplasma-addons \
         keepassxc \
