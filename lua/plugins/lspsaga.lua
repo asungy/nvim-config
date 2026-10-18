@@ -15,8 +15,8 @@ return {
     { "<leader>le", "<cmd>Lspsaga show_line_diagnostics<CR>", desc = "Show diagnostics under cursor" },
 
     -- Bonus navigation
-    { "]e",         "<cmd>Lspsaga diagnostic_jump_next<CR>", desc = "Next diagnostic" },
-    { "[e",         "<cmd>Lspsaga diagnostic_jump_prev<CR>", desc = "Previous diagnostic" },
+    { "<leader>l]", "<cmd>Lspsaga diagnostic_jump_next<CR>", desc = "Next diagnostic" },
+    { "<leader>l[", "<cmd>Lspsaga diagnostic_jump_prev<CR>", desc = "Previous diagnostic" },
     { "<leader>lo", "<cmd>Lspsaga outline<CR>",              desc = "Symbol outline" },
   },
   opts = {
