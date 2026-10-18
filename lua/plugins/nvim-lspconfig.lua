@@ -7,8 +7,8 @@ return {
       {
         "SmiteshP/nvim-navbuddy",
         dependencies = {
-            "SmiteshP/nvim-navic",
-            "MunifTanjim/nui.nvim"
+          "SmiteshP/nvim-navic",
+          "MunifTanjim/nui.nvim",
         },
         opts = { lsp = { auto_attach = true } },
       },
@@ -16,8 +16,10 @@ return {
     config = function()
       require("mason").setup()
 
-      vim.lsp.config("lua_ls", {}); vim.lsp.enable("lua_ls")
-      vim.lsp.config("ts_ls", {}); vim.lsp.enable("ts_ls")
+      vim.lsp.config("lua_ls", {})
+      vim.lsp.enable("lua_ls")
+      vim.lsp.config("ts_ls", {})
+      vim.lsp.enable("ts_ls")
     end,
   },
 }
