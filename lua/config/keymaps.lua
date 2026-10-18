@@ -20,6 +20,8 @@ map("v", "K", ":m '<-2<CR>gv=gv", { desc = "Move selection up" })
 
 -- Copy to clipboard
 map("v", "<leader>y", '"+y', { desc = "Copy selection to system clipboard" })
+map("n", "<leader>p", '"+p', { desc = "Paste selection to system clipboard" })
+map("v", "<leader>p", '"+p', { desc = "Paste selection to system clipboard" })
 
 -- Indent
 map("v", ">", ">gv", { desc = "Indent and keep selection" })
