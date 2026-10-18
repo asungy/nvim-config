@@ -21,7 +21,7 @@ return {
       desc = "Find git files",
     },
     {
-      "<leader>fg",
+      "<leader>f/",
       function()
         require("telescope.builtin").live_grep()
       end,
@@ -34,5 +34,62 @@ return {
       end,
       desc = "Buffers",
     },
+    {
+       "<leader>fm",
+      function()
+        require("telescope.builtin").marks()
+      end,
+      desc = "Marks",
+   },
+   {
+       "<leader>fq",
+      function()
+        require("telescope.builtin").colorscheme()
+      end,
+      desc = "Colorschemes",
+   },
+   {
+       "<leader>fr",
+      function()
+        require("telescope.builtin").registers()
+      end,
+      desc = "Registers",
+   },
+   {
+       "<leader>fz",
+      function()
+        require("telescope.builtin").current_buffer_fuzzy_find()
+      end,
+      desc = "Current buffer fuzzy find",
+
+   },
+   {
+       "<leader>fgc",
+      function()
+        require("telescope.builtin").git_commits()
+      end,
+      desc = "Git commits",
+   },
+   {
+       "<leader>fgb",
+      function()
+        require("telescope.builtin").git_bcommits()
+      end,
+      desc = "Git current buffer commits",
+   },
+   {
+       "<leader>fgs",
+      function()
+        require("telescope.builtin").git_status()
+      end,
+      desc = "Git status",
+   },
+   {
+       "<leader>fgh",
+      function()
+        require("telescope.builtin").git_stash()
+      end,
+      desc = "Git stash",
+   }
   },
 }

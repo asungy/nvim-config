@@ -28,14 +28,14 @@ return {
   keys = {
     -- Navigate hunks
     {
-      "]h",
+      "<leader>k]",
       function()
         require("gitsigns").nav_hunk("next")
       end,
       desc = "Next git hunk",
     },
     {
-      "[h",
+      "<leader>k[",
       function()
         require("gitsigns").nav_hunk("prev")
       end,
@@ -44,21 +44,21 @@ return {
 
     -- Hunks
     {
-      "<leader>sp",
+      "<leader>kp",
       function()
         require("gitsigns").preview_hunk()
       end,
       desc = "Preview git hunk",
     },
     {
-      "<leader>ss",
+      "<leader>ks",
       function()
         require("gitsigns").stage_hunk()
       end,
       desc = "Stage git hunk",
     },
     {
-      "<leader>sr",
+      "<leader>kr",
       function()
         require("gitsigns").reset_hunk()
       end,
@@ -67,7 +67,7 @@ return {
 
     -- Line blame on demand (since current_line_blame is off)
     {
-      "<leader>sb",
+      "<leader>kb",
       function()
         require("gitsigns").toggle_current_line_blame()
       end,
@@ -76,7 +76,7 @@ return {
 
     -- Diff view of everything against index
     {
-      "<leader>sd",
+      "<leader>kd",
       function()
         require("gitsigns").diffthis()
       end,
