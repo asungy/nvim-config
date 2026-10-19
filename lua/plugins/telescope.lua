@@ -118,6 +118,13 @@ return {
         require("telescope.builtin").lsp_type_definitions()
       end,
       desc = "Type Definitions",
+   },
+   {
+       "<leader>flD",
+      function()
+        require("telescope.builtin").diagnostics()
+      end,
+      desc = "Diagnostics",
    }
   },
 }

@@ -19,6 +19,7 @@ return {
       ["q"] = "actions.close", -- close oil like a normal popup
       ["-"] = "actions.parent", -- go up one directory
       ["_"] = "actions.open_cwd", -- jump back to working directory
+      ["R"] = "actions.refresh",
     },
     view_options = {
       show_hidden = false, -- show dotfiles in the listing
