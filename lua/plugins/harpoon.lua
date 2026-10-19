@@ -61,7 +61,7 @@ return {
     map("n", "<leader>hd", function()
       harpoon:list():remove()
     end, { desc = "Harpoon: remove current file" })
-    map("n", "<leader>fh", function()
+    map("n", "<leader>hf", function()
       toggle_telescope(harpoon:list())
     end, { desc = "Open harpoon window" })
 

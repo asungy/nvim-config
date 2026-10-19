@@ -90,6 +90,34 @@ return {
         require("telescope.builtin").git_stash()
       end,
       desc = "Git stash",
+   },
+   {
+       "<leader>flr",
+      function()
+        require("telescope.builtin").lsp_references()
+      end,
+      desc = "References",
+   },
+   {
+       "<leader>fli",
+      function()
+        require("telescope.builtin").lsp_implementations()
+      end,
+      desc = "Implementations",
+   },
+   {
+       "<leader>fld",
+      function()
+        require("telescope.builtin").lsp_definitions()
+      end,
+      desc = "Definitions",
+   },
+   {
+       "<leader>flt",
+      function()
+        require("telescope.builtin").lsp_type_definitions()
+      end,
+      desc = "Type Definitions",
    }
   },
 }
