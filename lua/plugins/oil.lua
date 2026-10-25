@@ -3,11 +3,18 @@ return {
   dependencies = { "nvim-lua/plenary.nvim" }, -- soft dependency; enables :Oil --preview floating preview
   keys = {
     {
-      "<C-n>",
+      "<leader>of",
       function()
         require("oil").toggle_float()
       end,
       desc = "Toggle oil floating file explorer",
+    },
+    {
+      "<leader>ob",
+      function()
+        require("oil").open()
+      end,
+      desc = "Open oil file explorer in current buffer",
     },
   },
   opts = {
